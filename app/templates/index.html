@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kivi — Semantic Memory</title>
+  <link rel="stylesheet" href="/static/app.css" />
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <span class="eyebrow">GOLDEN GOOSE / SEMANTIC MEMORY</span>
+        <h1>Kivi learns the parts of your world that keep mattering.</h1>
+        <p>Replay real Kivi contexts, inspect what becomes memory, then open a fresh Hey Kivi session and see how that understanding changes behavior.</p>
+      </div>
+      <button class="ghost" id="resetBtn">Reset state</button>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="learn">Learn</button>
+      <button class="tab" data-tab="ask">Hey Kivi</button>
+      <button class="tab" data-tab="memory">Memory</button>
+      <button class="tab" data-tab="trace">Why?</button>
+    </nav>
+
+    <section id="learn" class="panel active">
+      <div class="grid two">
+        <div class="card">
+          <h2>Replay an interaction</h2>
+          <label>Style / situation</label>
+          <select id="style"><option>developer</option><option>email</option><option selected>work messaging</option><option>personal messaging</option><option>other</option></select>
+          <label>App context</label><input id="app" value="Slack" />
+          <label>Raw ASR</label><textarea id="raw">rajeeves my manager</textarea>
+          <label>LLM-formatted output</label><textarea id="formatted">Rajeev is my manager.</textarea>
+          <label class="check"><input id="hide" type="checkbox" /> Hide Mode (session-only unless explicitly remembered)</label>
+          <button id="ingestBtn">Process interaction</button>
+        </div>
+        <div class="card result"><h2>Memory decision</h2><pre id="learnResult">No interaction processed yet.</pre></div>
+      </div>
+    </section>
+
+    <section id="ask" class="panel">
+      <div class="grid two">
+        <div class="card">
+          <h2>Fresh Hey Kivi session</h2>
+          <p class="muted">Semantic memory is applied here, not injected into ordinary dictation.</p>
+          <textarea id="query">Who is my manager?</textarea>
+          <button id="askBtn">Ask Hey Kivi</button>
+        </div>
+        <div class="card result"><h2>Answer + grounding</h2><pre id="askResult">Ask something grounded in the learned history.</pre></div>
+      </div>
+    </section>
+
+    <section id="memory" class="panel"><div class="card"><div class="row"><h2>What Kivi remembers</h2><button class="ghost" id="refreshMemory">Refresh</button></div><div id="memoryList" class="memory-list"></div></div></section>
+    <section id="trace" class="panel"><div class="grid two"><div class="card"><h2>Admission decisions</h2><div id="decisionList"></div></div><div class="card"><h2>Hey Kivi traces</h2><div id="traceList"></div></div></div></section>
+  </main>
+<script src="/static/app.js"></script>
+</body>
+</html>

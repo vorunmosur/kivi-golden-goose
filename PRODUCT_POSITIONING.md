@@ -1,0 +1,3 @@
+# Product Positioning
+
+Kivi should evolve from a session-bound voice tool into a trusted personal agent that builds a selective, evolving understanding of the user across sessions. It should remember useful facts, preferences, projects and experiences to reduce repetition, anticipate needs and help complete work, while updating stale knowledge and clarifying uncertain inferences instead of treating them as facts. Kivi should remain a proactive subordinate: increasingly capable as the user grants it access, but always bounded by the user’s permissions. The user should remain in control of what Kivi can access, remember and act upon, making trust and transparency fundamental to its intelligence.

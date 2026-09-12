@@ -1,0 +1,14 @@
+const $=s=>document.querySelector(s);
+const fmt=o=>JSON.stringify(o,null,2);
+
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('#'+b.dataset.tab).classList.add('active');if(b.dataset.tab==='memory')loadMemories();if(b.dataset.tab==='trace')loadTrace();});
+
+$('#ingestBtn').onclick=async()=>{const payload={raw_asr:$('#raw').value,formatted_text:$('#formatted').value,app_context:$('#app').value,style_context:$('#style').value,hide_mode:$('#hide').checked,session_id:'replay'};const r=await fetch('/api/interactions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});$('#learnResult').textContent=fmt(await r.json());};
+$('#askBtn').onclick=async()=>{const r=await fetch('/api/hey-kivi',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query:$('#query').value,session_id:'fresh-'+Date.now()})});$('#askResult').textContent=fmt(await r.json());};
+$('#resetBtn').onclick=async()=>{if(!confirm('Reset all learned state?'))return;await fetch('/api/reset',{method:'POST'});$('#learnResult').textContent='State reset.';$('#askResult').textContent='State reset.';};
+$('#refreshMemory').onclick=loadMemories;
+
+async function loadMemories(){const rows=await (await fetch('/api/memories')).json();$('#memoryList').innerHTML=rows.length?rows.map(m=>`<div class="memory"><div><span class="pill">${m.memory_type}</span><span class="pill">${m.scope}</span><span class="pill">${m.status}</span><h3>${esc(m.canonical_text)}</h3><p>Confidence ${m.confidence.toFixed(2)} · from ${esc(m.source_style)} · sources ${m.source_interaction_ids.join(', ')||'—'}</p></div><button class="ghost danger" onclick="forget(${m.id})">Forget</button></div>`).join(''):'<p class="muted">No memories yet.</p>';}
+async function forget(id){await fetch('/api/memories/'+id,{method:'DELETE'});loadMemories();}
+async function loadTrace(){const d=await (await fetch('/api/decisions')).json();$('#decisionList').innerHTML=d.map(x=>`<div class="trace"><strong>${x.action.toUpperCase()} · interaction ${x.interaction_id}</strong>${esc(x.reason)}<br><span class="muted">${esc(x.candidate.canonical_text||x.candidate.value||'')}</span></div>`).join('')||'<p class="muted">No decisions yet.</p>';const t=await (await fetch('/api/traces')).json();$('#traceList').innerHTML=t.map(x=>`<div class="trace"><strong>${esc(x.query)}</strong>${esc(x.response)}<br><span class="muted">memories ${x.retrieved_memory_ids.join(', ')||'none'} · ${x.end_to_end_latency_ms.toFixed(1)} ms</span></div>`).join('')||'<p class="muted">No queries yet.</p>';}
+function esc(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
