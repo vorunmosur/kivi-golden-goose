@@ -1,5 +1,10 @@
 # Semantic-memory design contract
 
+Historical V1 implementation contract, retained for comparison. The current
+implementation follows [V2_CONTRACT.md](V2_CONTRACT.md), including four memory
+kinds, independent certainty/time state, entity identities and claim support
+verification. The five-kind description below applies to the original submission.
+
 This document is the behavioral contract for the Golden Goose implementation. It exists so that the product does not collapse into a collection of prompts.
 
 ## Core principle

@@ -1,0 +1,285 @@
+[
+  {
+    "query": "Summarize the current projects you know about.",
+    "status": 200,
+    "result": {
+      "response": "I don\u2019t know from your saved history yet.",
+      "memories": [],
+      "history_evidence": [],
+      "trace_id": 1,
+      "retrieval_latency_ms": 8600.62,
+      "end_to_end_latency_ms": 74503.26,
+      "model_usage": {
+        "query_plan": {
+          "model": "qwen3.5:9b",
+          "prompt_tokens": 559,
+          "completion_tokens": 185,
+          "duration_ns": 17173534500,
+          "prompt_eval_duration_ns": 1460755000,
+          "generation_duration_ns": 15305176000,
+          "cost_usd": 0,
+          "cost_basis": "local inference; electricity/hardware excluded"
+        },
+        "retrieval_errors": [],
+        "generation": {
+          "model": "qwen3.5:9b",
+          "prompt_tokens": 2764,
+          "completion_tokens": 225,
+          "duration_ns": 24206466500,
+          "prompt_eval_duration_ns": 7420798000,
+          "generation_duration_ns": 16606708999,
+          "cost_usd": 0,
+          "cost_basis": "local inference; electricity/hardware excluded"
+        },
+        "deterministic_support": {
+          "passed": false,
+          "issues": [
+            "Unsupported relative time: currently"
+          ]
+        },
+        "verification": {
+          "model": "qwen3.5:9b",
+          "prompt_tokens": 2981,
+          "completion_tokens": 95,
+          "duration_ns": 15930437700,
+          "prompt_eval_duration_ns": 8718800000,
+          "generation_duration_ns": 7058646000,
+          "cost_usd": 0,
+          "cost_basis": "local inference; electricity/hardware excluded"
+        },
+        "verdict": {
+          "supported": true,
+          "reason": "Every personal factual assertion in the answer is explicitly supported by its cited evidence. The claim 'I am currently working on the Golden Goose project' is supported by memory_id 2 (source: interaction_id 2). The claims about contributing to rollouts for Golden Goose, Falcon, Orion, and Atlas are each supported by multiple memories with explicit source excerpts confirming these activities as current and active."
+        },
+        "contamination_guard": {
+          "passed": true,
+          "unsupported_foreign_terms": []
+        }
+      },
+      "reason": "The model did not return a supported answer with valid evidence citations."
+    },
+    "latency_ms": 74557.03939999512,
+    "passed": null
+  },
+  {
+    "query": "What communication preferences have I explicitly stated?",
+    "status": 200,
+    "result": {
+      "response": "You have explicitly stated a preference for concise bullet-point updates.",
+      "memories": [
+        {
+          "memory_id": 78,
+          "score": 0.9081,
+          "type": "preference",
+          "subject": "user",
+          "subject_entity_id": 2,
+          "subject_qualifier": "",
+          "value_entity_id": null,
+          "value_qualifier": "",
+          "predicate": "update_style_preference",
+          "value": "concise bullet point updates",
+          "canonical_text": "I prefer concise bullet-point updates.",
+          "scope": "global",
+          "confidence": 0.95,
+          "certainty": "confirmed",
+          "temporal_status": "current",
+          "status": "active",
+          "valid_from": "2026-09-02T02:51:00",
+          "valid_until": null,
+          "source_evidence": [
+            {
+              "interaction_id": 154,
+              "excerpt": "i prefer concise bullet point updates",
+              "occurred_at": "2026-09-02T02:51:00",
+              "app": "Unknown App"
+            },
+            {
+              "interaction_id": 227,
+              "excerpt": "i prefer concise bullet point updates",
+              "occurred_at": "2026-09-02T11:22:00",
+              "app": "Unknown App"
+            }
+          ],
+          "source_interaction_ids": [
+            154,
+            227
+          ]
+        },
+        {
+          "memory_id": 149,
+          "score": 0.8477,
+          "type": "preference",
+          "subject": "user",
+          "subject_entity_id": 2,
+          "subject_qualifier": "",
+          "value_entity_id": null,
+          "value_qualifier": "",
+          "predicate": "email_style",
+          "value": "concise bullet point updates",
+          "canonical_text": "I prefer concise bullet-point updates.",
+          "scope": "global",
+          "confidence": 0.95,
+          "certainty": "confirmed",
+          "temporal_status": "current",
+          "status": "active",
+          "valid_from": "2026-09-03T09:32:00",
+          "valid_until": null,
+          "source_evidence": [
+            {
+              "interaction_id": 417,
+              "excerpt": "i prefer concise bullet point updates",
+              "occurred_at": "2026-09-03T09:32:00",
+              "app": "Unknown App"
+            },
+            {
+              "interaction_id": 424,
+              "excerpt": "i prefer concise bullet point updates",
+              "occurred_at": "2026-09-03T10:21:00",
+              "app": "Unknown App"
+            },
+            {
+              "interaction_id": 468,
+              "excerpt": "i prefer concise bullet point updates",
+              "occurred_at": "2026-09-03T15:29:00",
+              "app": "Unknown App"
+            }
+          ],
+          "source_interaction_ids": [
+            417,
+            424,
+            468
+          ]
+        },
+        {
+          "memory_id": 26,
+          "score": 0.8264,
+          "type": "preference",
+          "subject": "user",
+          "subject_entity_id": 2,
+          "subject_qualifier": "",
+          "value_entity_id": null,
+          "value_qualifier": "",
+          "predicate": "update_style",
+          "value": "concise bullet point",
+          "canonical_text": "I prefer concise bullet-point updates.",
+          "scope": "global",
+          "confidence": 0.95,
+          "certainty": "confirmed",
+          "temporal_status": "current",
+          "status": "active",
+          "valid_from": "2026-09-01T13:26:00",
+          "valid_until": null,
+          "source_evidence": [
+            {
+              "interaction_id": 39,
+              "excerpt": "i prefer concise bullet point updates",
+              "occurred_at": "2026-09-01T13:26:00",
+              "app": "Unknown App"
+            }
+          ],
+          "source_interaction_ids": [
+            39
+          ]
+        }
+      ],
+      "history_evidence": [],
+      "trace_id": 2,
+      "retrieval_latency_ms": 5825.43,
+      "end_to_end_latency_ms": 46966.08,
+      "model_usage": {
+        "query_plan": {
+          "model": "qwen3.5:9b",
+          "prompt_tokens": 557,
+          "completion_tokens": 162,
+          "duration_ns": 13734827300,
+          "prompt_eval_duration_ns": 954980000,
+          "generation_duration_ns": 12621287000,
+          "cost_usd": 0,
+          "cost_basis": "local inference; electricity/hardware excluded"
+        },
+        "retrieval_errors": [],
+        "generation": {
+          "model": "qwen3.5:9b",
+          "prompt_tokens": 1657,
+          "completion_tokens": 99,
+          "duration_ns": 9160134500,
+          "prompt_eval_duration_ns": 2254107000,
+          "generation_duration_ns": 6777033000,
+          "cost_usd": 0,
+          "cost_basis": "local inference; electricity/hardware excluded"
+        },
+        "deterministic_support": {
+          "passed": true,
+          "issues": []
+        },
+        "verification": {
+          "model": "qwen3.5:9b",
+          "prompt_tokens": 1194,
+          "completion_tokens": 107,
+          "duration_ns": 9839140100,
+          "prompt_eval_duration_ns": 1964089000,
+          "generation_duration_ns": 7753082000,
+          "cost_usd": 0,
+          "cost_basis": "local inference; electricity/hardware excluded"
+        },
+        "verdict": {
+          "supported": true,
+          "reason": "The claim 'You have explicitly stated a preference for concise bullet-point updates' is fully supported by the provided evidence. The memory records (IDs 26, 78, 149) contain explicit user statements ('i prefer concise bullet point updates') occurring at specific timestamps prior to the reference time. These excerpts directly substantiate the assertion that the user has explicitly stated this preference. No conflicting or unsupported claims are present in the answer."
+        },
+        "contamination_guard": {
+          "passed": true,
+          "unsupported_foreign_terms": []
+        }
+      },
+      "reason": "Grounded generation with validated citations and complete-answer evidence verification."
+    },
+    "latency_ms": 46975.62389999803,
+    "passed": null
+  },
+  {
+    "query": "What is my passport number?",
+    "status": 200,
+    "result": {
+      "response": "I don\u2019t know from your saved history yet.",
+      "memories": [],
+      "history_evidence": [],
+      "trace_id": 3,
+      "retrieval_latency_ms": 13039.45,
+      "end_to_end_latency_ms": 33681.27,
+      "model_usage": {
+        "query_plan": {
+          "model": "qwen3.5:9b",
+          "prompt_tokens": 555,
+          "completion_tokens": 106,
+          "duration_ns": 9100782100,
+          "prompt_eval_duration_ns": 932935000,
+          "generation_duration_ns": 8012657000,
+          "cost_usd": 0,
+          "cost_basis": "local inference; electricity/hardware excluded"
+        },
+        "retrieval_errors": [],
+        "generation": {
+          "model": "qwen3.5:9b",
+          "prompt_tokens": 2556,
+          "completion_tokens": 85,
+          "duration_ns": 5925705200,
+          "prompt_eval_duration_ns": 2621738000,
+          "generation_duration_ns": 3067727000,
+          "cost_usd": 0,
+          "cost_basis": "local inference; electricity/hardware excluded"
+        },
+        "deterministic_support": {
+          "passed": true,
+          "issues": []
+        },
+        "contamination_guard": {
+          "passed": true,
+          "unsupported_foreign_terms": []
+        }
+      },
+      "reason": "The model did not return a supported answer with valid evidence citations."
+    },
+    "latency_ms": 33698.81789999636,
+    "passed": null
+  }
+]

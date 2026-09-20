@@ -1,0 +1,6346 @@
+[
+  {
+    "id": 5,
+    "memory_type": "fact",
+    "subject": "Golden Goose",
+    "subject_entity_id": 3,
+    "predicate": "deadline",
+    "value": "Saturday",
+    "value_entity_id": null,
+    "canonical_text": "The deadline for Golden Goose is Saturday.",
+    "scope": "{\"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T10:20:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 5,
+        "excerpt": "Correction: the Golden Goose deadline moved to Saturday."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      5
+    ]
+  },
+  {
+    "id": 6,
+    "memory_type": "relationship",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "manager",
+    "value": "Priya",
+    "value_entity_id": 4,
+    "canonical_text": "Priya is my manager.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T11:00:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 7,
+        "excerpt": "My manager changed from Rajeev to Priya."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      7
+    ]
+  },
+  {
+    "id": 13,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "parked_on",
+    "value": "level three",
+    "value_entity_id": null,
+    "canonical_text": "I parked on level three today.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T10:31:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 14,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 53,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 72,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 99,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 102,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 110,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 111,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 121,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 122,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 147,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 156,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 160,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 181,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 199,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 217,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 240,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 248,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 267,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 272,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 278,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 319,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 320,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 321,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 347,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 349,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 350,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 351,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 354,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 363,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 383,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 386,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 433,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 438,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 443,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 452,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 454,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 458,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 478,
+        "excerpt": "i parked on level three today"
+      },
+      {
+        "interaction_id": 484,
+        "excerpt": "i parked on level three today"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      14,
+      53,
+      72,
+      99,
+      102,
+      110,
+      111,
+      121,
+      122,
+      147,
+      156,
+      160,
+      181,
+      199,
+      217,
+      240,
+      248,
+      267,
+      272,
+      278,
+      319,
+      320,
+      321,
+      347,
+      349,
+      350,
+      351,
+      354,
+      363,
+      383,
+      386,
+      433,
+      438,
+      443,
+      452,
+      454,
+      458,
+      478,
+      484
+    ]
+  },
+  {
+    "id": 19,
+    "memory_type": "fact",
+    "subject": "Orion",
+    "subject_entity_id": 7,
+    "predicate": "uses",
+    "value": "fast api",
+    "value_entity_id": null,
+    "canonical_text": "Orion uses FastAPI for the backend.",
+    "scope": "{\"app\": \"orion\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T11:27:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 22,
+        "excerpt": "orion uses fast api for the backend"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      22
+    ]
+  },
+  {
+    "id": 20,
+    "memory_type": "relationship",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "reviewing",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Rajeev is reviewing Golden Goose now.",
+    "scope": "{\"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T11:34:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 23,
+        "excerpt": "actually rajeev is reviewing golden goose now"
+      },
+      {
+        "interaction_id": 30,
+        "excerpt": "actually priya is reviewing golden goose now"
+      },
+      {
+        "interaction_id": 59,
+        "excerpt": "actually rajeev is reviewing golden goose now"
+      },
+      {
+        "interaction_id": 82,
+        "excerpt": "actually arjun is reviewing golden goose now"
+      },
+      {
+        "interaction_id": 91,
+        "excerpt": "actually priya is reviewing golden goose now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      23,
+      30,
+      59,
+      82,
+      91
+    ]
+  },
+  {
+    "id": 23,
+    "memory_type": "fact",
+    "subject": "Orion",
+    "subject_entity_id": 7,
+    "predicate": "uses",
+    "value": "FastAPI",
+    "value_entity_id": null,
+    "canonical_text": "Orion uses FastAPI for the backend.",
+    "scope": "{\"app\": \"orion\", \"context\": \"backend\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T11:55:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 26,
+        "excerpt": "Orion uses FastAPI for the backend."
+      },
+      {
+        "interaction_id": 46,
+        "excerpt": "Orion uses FastAPI for the backend."
+      },
+      {
+        "interaction_id": 77,
+        "excerpt": "Orion uses FastAPI for the backend."
+      },
+      {
+        "interaction_id": 107,
+        "excerpt": "Orion uses FastAPI for the backend."
+      },
+      {
+        "interaction_id": 228,
+        "excerpt": "Orion uses FastAPI for the backend."
+      },
+      {
+        "interaction_id": 322,
+        "excerpt": "Orion uses FastAPI for the backend."
+      },
+      {
+        "interaction_id": 325,
+        "excerpt": "Orion uses FastAPI for the backend."
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      26,
+      46,
+      77,
+      107,
+      228,
+      322,
+      325
+    ]
+  },
+  {
+    "id": 24,
+    "memory_type": "episode",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "reviews",
+    "value": "Orion",
+    "value_entity_id": 7,
+    "canonical_text": "Maya is reviewing Orion now.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T12:16:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 29,
+        "excerpt": "actually maya is reviewing orion now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      29
+    ]
+  },
+  {
+    "id": 27,
+    "memory_type": "fact",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "works_in_time_zone",
+    "value": "Singapore",
+    "value_entity_id": null,
+    "canonical_text": "Maya works in the Singapore time zone.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T13:33:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 40,
+        "excerpt": "maya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 155,
+        "excerpt": "maya works in the singapore time zone"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      40,
+      155
+    ]
+  },
+  {
+    "id": 32,
+    "memory_type": "relationship",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "reviews",
+    "value": "Orion",
+    "value_entity_id": 7,
+    "canonical_text": "Priya is reviewing Orion now.",
+    "scope": "{\"app\": \"orion\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T14:36:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 49,
+        "excerpt": "actually priya is reviewing orion now"
+      },
+      {
+        "interaction_id": 115,
+        "excerpt": "actually priya is reviewing orion now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      49,
+      115
+    ]
+  },
+  {
+    "id": 35,
+    "memory_type": "fact",
+    "subject": "Neha",
+    "subject_entity_id": 6,
+    "predicate": "works_in_time_zone",
+    "value": "Singapore",
+    "value_entity_id": null,
+    "canonical_text": "Neha works in the Singapore time zone.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T15:18:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 55,
+        "excerpt": "neha works in the singapore time zone"
+      },
+      {
+        "interaction_id": 279,
+        "excerpt": "neha works in the singapore time zone"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      55,
+      279
+    ]
+  },
+  {
+    "id": 36,
+    "memory_type": "relationship",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "reviews",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Maya is reviewing Golden Goose now.",
+    "scope": "{\"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T15:25:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 56,
+        "excerpt": "actually maya is reviewing golden goose now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      56
+    ]
+  },
+  {
+    "id": 38,
+    "memory_type": "relationship",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "reviewing",
+    "value": "atlas",
+    "value_entity_id": 10,
+    "canonical_text": "Arjun is reviewing Atlas now.",
+    "scope": "{\"project\": \"atlas\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T15:39:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 58,
+        "excerpt": "actually arjun is reviewing atlas now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      58
+    ]
+  },
+  {
+    "id": 39,
+    "memory_type": "fact",
+    "subject": "Falcon",
+    "subject_entity_id": 11,
+    "predicate": "uses",
+    "value": "FastAPI",
+    "value_entity_id": null,
+    "canonical_text": "Falcon uses FastAPI for the backend.",
+    "scope": "{\"app\": \"falcon\", \"context\": \"backend\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T16:14:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 63,
+        "excerpt": "Falcon uses FastAPI for the backend."
+      },
+      {
+        "interaction_id": 134,
+        "excerpt": "Falcon uses FastAPI for the backend."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      63,
+      134
+    ]
+  },
+  {
+    "id": 41,
+    "memory_type": "relationship",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "handles_design_reviews",
+    "value": "design reviews",
+    "value_entity_id": 12,
+    "canonical_text": "Maya handles design reviews.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T16:28:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 65,
+        "excerpt": "remember that maya handles design reviews"
+      },
+      {
+        "interaction_id": 245,
+        "excerpt": "remember that maya handles design reviews"
+      },
+      {
+        "interaction_id": 250,
+        "excerpt": "remember that maya handles design reviews"
+      },
+      {
+        "interaction_id": 380,
+        "excerpt": "remember that maya handles design reviews"
+      },
+      {
+        "interaction_id": 472,
+        "excerpt": "remember that maya handles design reviews"
+      },
+      {
+        "interaction_id": 490,
+        "excerpt": "remember that maya handles design reviews"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      65,
+      245,
+      250,
+      380,
+      472,
+      490
+    ]
+  },
+  {
+    "id": 42,
+    "memory_type": "relationship",
+    "subject": "Neha",
+    "subject_entity_id": 6,
+    "predicate": "handles_design_reviews",
+    "value": "design reviews",
+    "value_entity_id": 12,
+    "canonical_text": "Neha handles design reviews.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T16:35:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 66,
+        "excerpt": "remember that neha handles design reviews"
+      },
+      {
+        "interaction_id": 170,
+        "excerpt": "remember that neha handles design reviews"
+      },
+      {
+        "interaction_id": 276,
+        "excerpt": "remember that neha handles design reviews"
+      },
+      {
+        "interaction_id": 341,
+        "excerpt": "remember that neha handles design reviews"
+      },
+      {
+        "interaction_id": 379,
+        "excerpt": "remember that neha handles design reviews"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      66,
+      170,
+      276,
+      341,
+      379
+    ]
+  },
+  {
+    "id": 44,
+    "memory_type": "fact",
+    "subject": "Aaditya",
+    "subject_entity_id": 5,
+    "predicate": "works_in_time_zone",
+    "value": "Singapore",
+    "value_entity_id": null,
+    "canonical_text": "Aaditya works in the Singapore time zone.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T16:49:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 68,
+        "excerpt": "aaditya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 70,
+        "excerpt": "aaditya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 145,
+        "excerpt": "aaditya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 413,
+        "excerpt": "aaditya works in the singapore time zone"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      68,
+      70,
+      145,
+      413
+    ]
+  },
+  {
+    "id": 47,
+    "memory_type": "episode",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "mentioned",
+    "value": "Falcon",
+    "value_entity_id": 11,
+    "canonical_text": "Priya mentioned Falcon once in passing.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T17:38:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 75,
+        "excerpt": "priya mentioned falcon once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      75
+    ]
+  },
+  {
+    "id": 49,
+    "memory_type": "relationship",
+    "subject": "arjun",
+    "subject_entity_id": 9,
+    "predicate": "handles_design_reviews",
+    "value": "design reviews",
+    "value_entity_id": 12,
+    "canonical_text": "Arjun handles design reviews.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T17:59:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 78,
+        "excerpt": "remember that arjun handles design reviews"
+      },
+      {
+        "interaction_id": 144,
+        "excerpt": "remember that arjun handles design reviews"
+      },
+      {
+        "interaction_id": 339,
+        "excerpt": "remember that arjun handles design reviews"
+      },
+      {
+        "interaction_id": 408,
+        "excerpt": "remember that arjun handles design reviews"
+      },
+      {
+        "interaction_id": 488,
+        "excerpt": "remember that arjun handles design reviews"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      78,
+      144,
+      339,
+      408,
+      488
+    ]
+  },
+  {
+    "id": 50,
+    "memory_type": "relationship",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "handles_design_reviews",
+    "value": "design reviews",
+    "value_entity_id": 12,
+    "canonical_text": "Priya handles design reviews.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T18:06:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 79,
+        "excerpt": "remember that priya handles design reviews"
+      },
+      {
+        "interaction_id": 238,
+        "excerpt": "remember that priya handles design reviews"
+      },
+      {
+        "interaction_id": 416,
+        "excerpt": "remember that priya handles design reviews"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      79,
+      238,
+      416
+    ]
+  },
+  {
+    "id": 51,
+    "memory_type": "relationship",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "reviewing",
+    "value": "Pulse",
+    "value_entity_id": 13,
+    "canonical_text": "Rajeev is reviewing Pulse now.",
+    "scope": "{\"project\": \"pulse\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T18:34:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 83,
+        "excerpt": "actually rajeev is reviewing pulse now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      83
+    ]
+  },
+  {
+    "id": 53,
+    "memory_type": "relationship",
+    "subject": "Aaditya",
+    "subject_entity_id": 5,
+    "predicate": "reviews",
+    "value": "Orion",
+    "value_entity_id": 7,
+    "canonical_text": "Aaditya is reviewing Orion now.",
+    "scope": "{\"app\": \"orion\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T18:55:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 86,
+        "excerpt": "actually aaditya is reviewing orion now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      86
+    ]
+  },
+  {
+    "id": 54,
+    "memory_type": "episode",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "mentioned",
+    "value": "atlas",
+    "value_entity_id": 10,
+    "canonical_text": "Maya mentioned Atlas once in passing.",
+    "scope": "{\"project\": \"atlas\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T19:02:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 87,
+        "excerpt": "maya mentioned atlas once in passing"
+      },
+      {
+        "interaction_id": 197,
+        "excerpt": "maya mentioned atlas once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      87,
+      197
+    ]
+  },
+  {
+    "id": 57,
+    "memory_type": "fact",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "works_in_time_zone",
+    "value": "Singapore",
+    "value_entity_id": null,
+    "canonical_text": "Priya works in the Singapore time zone.",
+    "scope": "{\"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T19:37:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 92,
+        "excerpt": "priya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 167,
+        "excerpt": "priya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 402,
+        "excerpt": "priya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 437,
+        "excerpt": "priya works in the singapore time zone"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      92,
+      167,
+      402,
+      437
+    ]
+  },
+  {
+    "id": 60,
+    "memory_type": "relationship",
+    "subject": "Aaditya",
+    "subject_entity_id": 5,
+    "predicate": "handles_design_reviews",
+    "value": "design reviews",
+    "value_entity_id": 12,
+    "canonical_text": "Aaditya handles design reviews.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T21:01:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 104,
+        "excerpt": "remember that aaditya handles design reviews"
+      },
+      {
+        "interaction_id": 124,
+        "excerpt": "remember that aaditya handles design reviews"
+      },
+      {
+        "interaction_id": 138,
+        "excerpt": "remember that aaditya handles design reviews"
+      },
+      {
+        "interaction_id": 171,
+        "excerpt": "remember that aaditya handles design reviews"
+      },
+      {
+        "interaction_id": 335,
+        "excerpt": "remember that aaditya handles design reviews"
+      },
+      {
+        "interaction_id": 373,
+        "excerpt": "remember that aaditya handles design reviews"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      104,
+      124,
+      138,
+      171,
+      335,
+      373
+    ]
+  },
+  {
+    "id": 62,
+    "memory_type": "episode",
+    "subject": "Aaditya",
+    "subject_entity_id": 5,
+    "predicate": "mentioned",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Aaditya mentioned Golden Goose once in passing.",
+    "scope": "{\"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T21:15:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 106,
+        "excerpt": "aaditya mentioned golden goose once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      106
+    ]
+  },
+  {
+    "id": 63,
+    "memory_type": "fact",
+    "subject": "atlas",
+    "subject_entity_id": 10,
+    "predicate": "uses",
+    "value": "FastAPI",
+    "value_entity_id": null,
+    "canonical_text": "Atlas uses FastAPI for the backend.",
+    "scope": "{\"app\": \"atlas\", \"context\": \"backend\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T22:11:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 114,
+        "excerpt": "atlas uses fast api for the backend"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      114
+    ]
+  },
+  {
+    "id": 65,
+    "memory_type": "fact",
+    "subject": "Golden Goose",
+    "subject_entity_id": 3,
+    "predicate": "uses",
+    "value": "FastAPI",
+    "value_entity_id": null,
+    "canonical_text": "Golden Goose uses FastAPI for the backend.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"backend\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T23:28:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 125,
+        "excerpt": "golden goose uses fast api for the backend"
+      },
+      {
+        "interaction_id": 174,
+        "excerpt": "golden goose uses fast api for the backend"
+      },
+      {
+        "interaction_id": 202,
+        "excerpt": "golden goose uses fast api for the backend"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      125,
+      174,
+      202
+    ]
+  },
+  {
+    "id": 66,
+    "memory_type": "episode",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "mentioned",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Priya mentioned Golden Goose once in passing.",
+    "scope": "{\"app\": \"golden goose\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T23:42:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 127,
+        "excerpt": "priya mentioned golden goose once in passing"
+      },
+      {
+        "interaction_id": 262,
+        "excerpt": "priya mentioned golden goose once in passing"
+      },
+      {
+        "interaction_id": 281,
+        "excerpt": "priya mentioned golden goose once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      127,
+      262,
+      281
+    ]
+  },
+  {
+    "id": 70,
+    "memory_type": "fact",
+    "subject": "Aaditya",
+    "subject_entity_id": 5,
+    "predicate": "reviews",
+    "value": "Orion",
+    "value_entity_id": 7,
+    "canonical_text": "Aaditya is reviewing Orion now.",
+    "scope": "{\"app\": \"orion\", \"project\": \"orion\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T00:52:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 137,
+        "excerpt": "actually aaditya is reviewing orion now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      137
+    ]
+  },
+  {
+    "id": 72,
+    "memory_type": "fact",
+    "subject": "Pulse",
+    "subject_entity_id": 13,
+    "predicate": "uses",
+    "value": "FastAPI",
+    "value_entity_id": null,
+    "canonical_text": "Pulse uses FastAPI for the backend.",
+    "scope": "{\"app\": \"pulse\", \"context\": \"backend\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T01:13:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 140,
+        "excerpt": "pulse uses fast api for the backend"
+      },
+      {
+        "interaction_id": 193,
+        "excerpt": "Pulse uses FastAPI for the backend."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      140,
+      193
+    ]
+  },
+  {
+    "id": 76,
+    "memory_type": "relationship",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "reviews",
+    "value": "Orion",
+    "value_entity_id": 7,
+    "canonical_text": "Rajeev is reviewing Orion now.",
+    "scope": "{\"app\": \"orion\", \"context\": \"review\", \"project\": \"orion\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T02:30:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 151,
+        "excerpt": "actually rajeev is reviewing orion now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      151
+    ]
+  },
+  {
+    "id": 79,
+    "memory_type": "episode",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "reviewing",
+    "value": "Pulse",
+    "value_entity_id": 13,
+    "canonical_text": "Maya is reviewing Pulse now.",
+    "scope": "{\"app\": \"pulse\", \"context\": \"review\", \"project\": \"pulse\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T03:26:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 159,
+        "excerpt": "actually maya is reviewing pulse now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      159
+    ]
+  },
+  {
+    "id": 84,
+    "memory_type": "relationship",
+    "subject": "Aaditya",
+    "subject_entity_id": 5,
+    "predicate": "reviews",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Aaditya is reviewing Golden Goose now.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"review\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T05:46:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 179,
+        "excerpt": "Actually, Aaditya is reviewing Golden Goose now."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      179
+    ]
+  },
+  {
+    "id": 87,
+    "memory_type": "fact",
+    "subject": "arjun",
+    "subject_entity_id": 9,
+    "predicate": "works_in_time_zone",
+    "value": "Singapore",
+    "value_entity_id": null,
+    "canonical_text": "Arjun works in the Singapore time zone.",
+    "scope": "{\"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T06:35:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 186,
+        "excerpt": "arjun works in the singapore time zone"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      186
+    ]
+  },
+  {
+    "id": 89,
+    "memory_type": "episode",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "mentioned",
+    "value": "Golden Goose",
+    "value_entity_id": null,
+    "canonical_text": "Rajeev mentioned Golden Goose once in passing.",
+    "scope": "{\"app\": \"golden goose\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T07:45:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 196,
+        "excerpt": "rajeev mentioned golden goose once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      196
+    ]
+  },
+  {
+    "id": 90,
+    "memory_type": "episode",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "mentioned",
+    "value": "Orion",
+    "value_entity_id": 7,
+    "canonical_text": "Maya mentioned Orion once in passing.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T08:20:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 201,
+        "excerpt": "Maya mentioned Orion once in passing."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      201
+    ]
+  },
+  {
+    "id": 93,
+    "memory_type": "relationship",
+    "subject": "Aaditya",
+    "subject_entity_id": 5,
+    "predicate": "reviews",
+    "value": "Orion",
+    "value_entity_id": 7,
+    "canonical_text": "Aaditya is reviewing Orion now.",
+    "scope": "{\"app\": \"orion\", \"context\": \"review\", \"project\": \"orion\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T08:55:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 206,
+        "excerpt": "Actually, Aaditya is reviewing Orion now."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      206
+    ]
+  },
+  {
+    "id": 97,
+    "memory_type": "episode",
+    "subject": "arjun",
+    "subject_entity_id": 9,
+    "predicate": "reviewing",
+    "value": "Pulse",
+    "value_entity_id": 13,
+    "canonical_text": "Arjun is reviewing Pulse now.",
+    "scope": "{\"app\": \"pulse\", \"context\": \"review\", \"project\": \"pulse\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T10:19:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 218,
+        "excerpt": "actually arjun is reviewing pulse now"
+      },
+      {
+        "interaction_id": 457,
+        "excerpt": "actually arjun is reviewing pulse now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      218,
+      457
+    ]
+  },
+  {
+    "id": 98,
+    "memory_type": "fact",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "works_in_time_zone",
+    "value": "Singapore",
+    "value_entity_id": null,
+    "canonical_text": "Maya works in the Singapore time zone.",
+    "scope": "{\"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T10:26:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 219,
+        "excerpt": "maya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 239,
+        "excerpt": "maya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 271,
+        "excerpt": "maya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 291,
+        "excerpt": "maya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 375,
+        "excerpt": "maya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 483,
+        "excerpt": "maya works in the singapore time zone"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      219,
+      239,
+      271,
+      291,
+      375,
+      483
+    ]
+  },
+  {
+    "id": 99,
+    "memory_type": "episode",
+    "subject": "arjun",
+    "subject_entity_id": 9,
+    "predicate": "mentioned",
+    "value": "Falcon",
+    "value_entity_id": 11,
+    "canonical_text": "Arjun mentioned Falcon once in passing.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T10:33:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 220,
+        "excerpt": "arjun mentioned falcon once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      220
+    ]
+  },
+  {
+    "id": 100,
+    "memory_type": "fact",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "reviewing",
+    "value": "atlas",
+    "value_entity_id": 10,
+    "canonical_text": "Rajeev is reviewing Atlas now.",
+    "scope": "{\"app\": \"atlas\", \"context\": \"review\", \"project\": \"atlas\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T10:54:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 223,
+        "excerpt": "actually rajeev is reviewing atlas now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      223
+    ]
+  },
+  {
+    "id": 102,
+    "memory_type": "relationship",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "reviewing",
+    "value": "Pulse",
+    "value_entity_id": 13,
+    "canonical_text": "Rajeev is reviewing Pulse now.",
+    "scope": "{\"app\": \"pulse\", \"context\": \"review\", \"project\": \"pulse\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T11:36:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 229,
+        "excerpt": "actually rajeev is reviewing pulse now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      229
+    ]
+  },
+  {
+    "id": 103,
+    "memory_type": "episode",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "mentioned",
+    "value": "atlas",
+    "value_entity_id": 10,
+    "canonical_text": "Rajeev mentioned Atlas once in passing.",
+    "scope": "{\"app\": \"atlas\", \"project\": \"atlas\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T11:50:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 231,
+        "excerpt": "rajeev mentioned atlas once in passing"
+      },
+      {
+        "interaction_id": 277,
+        "excerpt": "rajeev mentioned atlas once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      231,
+      277
+    ]
+  },
+  {
+    "id": 104,
+    "memory_type": "episode",
+    "subject": "Neha",
+    "subject_entity_id": 6,
+    "predicate": "mentioned",
+    "value": "Pulse",
+    "value_entity_id": null,
+    "canonical_text": "Neha mentioned Pulse once in passing.",
+    "scope": "{\"app\": \"pulse\", \"project\": \"pulse\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T11:57:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 232,
+        "excerpt": "neha mentioned pulse once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      232
+    ]
+  },
+  {
+    "id": 105,
+    "memory_type": "episode",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "mentioned",
+    "value": "Falcon",
+    "value_entity_id": null,
+    "canonical_text": "Rajeev mentioned Falcon once in passing.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T12:04:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 233,
+        "excerpt": "rajeev mentioned falcon once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      233
+    ]
+  },
+  {
+    "id": 106,
+    "memory_type": "relationship",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "handles_design_reviews",
+    "value": "design reviews",
+    "value_entity_id": 12,
+    "canonical_text": "Rajeev handles design reviews.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T12:18:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 235,
+        "excerpt": "remember that rajeev handles design reviews"
+      },
+      {
+        "interaction_id": 429,
+        "excerpt": "remember that rajeev handles design reviews"
+      },
+      {
+        "interaction_id": 470,
+        "excerpt": "remember that rajeev handles design reviews"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      235,
+      429,
+      470
+    ]
+  },
+  {
+    "id": 108,
+    "memory_type": "episode",
+    "subject": "Neha",
+    "subject_entity_id": 6,
+    "predicate": "mentioned",
+    "value": "Falcon",
+    "value_entity_id": null,
+    "canonical_text": "Neha mentioned Falcon once in passing.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T13:21:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 244,
+        "excerpt": "neha mentioned falcon once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      244
+    ]
+  },
+  {
+    "id": 110,
+    "memory_type": "relationship",
+    "subject": "Neha",
+    "subject_entity_id": 6,
+    "predicate": "reviewing",
+    "value": "Pulse",
+    "value_entity_id": 13,
+    "canonical_text": "Neha is reviewing Pulse now.",
+    "scope": "{\"app\": \"pulse\", \"context\": \"review\", \"project\": \"pulse\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T14:24:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 253,
+        "excerpt": "Actually, Neha is reviewing Pulse now."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      253
+    ]
+  },
+  {
+    "id": 111,
+    "memory_type": "relationship",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "reviews",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Maya is reviewing Golden Goose now.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"review\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T14:38:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 255,
+        "excerpt": "Actually, Maya is reviewing Golden Goose now."
+      },
+      {
+        "interaction_id": 392,
+        "excerpt": "Actually, Maya is reviewing Golden Goose now."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      255,
+      392
+    ]
+  },
+  {
+    "id": 112,
+    "memory_type": "fact",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "reviewing",
+    "value": "Falcon",
+    "value_entity_id": null,
+    "canonical_text": "Maya is reviewing Falcon now.",
+    "scope": "{\"app\": \"falcon\", \"context\": \"review\", \"project\": \"falcon\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T14:59:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 258,
+        "excerpt": "Actually, Maya is reviewing Falcon now."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      258
+    ]
+  },
+  {
+    "id": 113,
+    "memory_type": "relationship",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "reviewing",
+    "value": "atlas",
+    "value_entity_id": 10,
+    "canonical_text": "Priya is reviewing Atlas now.",
+    "scope": "{\"app\": \"atlas\", \"context\": \"review\", \"project\": \"atlas\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T15:55:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 266,
+        "excerpt": "actually priya is reviewing atlas now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      266
+    ]
+  },
+  {
+    "id": 115,
+    "memory_type": "fact",
+    "subject": "Aaditya",
+    "subject_entity_id": 5,
+    "predicate": "works_in_time_zone",
+    "value": "Singapore",
+    "value_entity_id": null,
+    "canonical_text": "Aaditya works in the Singapore time zone.",
+    "scope": "{\"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T18:15:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 286,
+        "excerpt": "aaditya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 314,
+        "excerpt": "aaditya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 318,
+        "excerpt": "aaditya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 450,
+        "excerpt": "aaditya works in the singapore time zone"
+      },
+      {
+        "interaction_id": 499,
+        "excerpt": "aaditya works in the singapore time zone"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      286,
+      314,
+      318,
+      450,
+      499
+    ]
+  },
+  {
+    "id": 116,
+    "memory_type": "episode",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "mentioned",
+    "value": "Falcon",
+    "value_entity_id": 11,
+    "canonical_text": "Rajeev mentioned Falcon once in passing.",
+    "scope": "{\"app\": \"falcon\", \"context\": \"mention\", \"project\": \"falcon\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T18:29:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 288,
+        "excerpt": "rajeev mentioned falcon once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      288
+    ]
+  },
+  {
+    "id": 118,
+    "memory_type": "episode",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "mentioned",
+    "value": "Pulse",
+    "value_entity_id": null,
+    "canonical_text": "Priya mentioned Pulse once in passing.",
+    "scope": "{\"app\": \"pulse\", \"project\": \"pulse\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T18:43:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 290,
+        "excerpt": "priya mentioned pulse once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      290
+    ]
+  },
+  {
+    "id": 122,
+    "memory_type": "episode",
+    "subject": "Aaditya",
+    "subject_entity_id": 5,
+    "predicate": "mentioned",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Aaditya mentioned Golden Goose once in passing.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"mention\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T20:07:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 302,
+        "excerpt": "aaditya mentioned golden goose once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      302
+    ]
+  },
+  {
+    "id": 124,
+    "memory_type": "relationship",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "reviewing",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Priya is reviewing Golden Goose now.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"review\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T21:17:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 312,
+        "excerpt": "actually priya is reviewing golden goose now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      312
+    ]
+  },
+  {
+    "id": 125,
+    "memory_type": "episode",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "mentioned",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Rajeev mentioned Golden Goose once in passing.",
+    "scope": "{\"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T21:45:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 316,
+        "excerpt": "rajeev mentioned golden goose once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      316
+    ]
+  },
+  {
+    "id": 126,
+    "memory_type": "relationship",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "reviewing",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Rajeev is reviewing Golden Goose now.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"review\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T21:52:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 317,
+        "excerpt": "actually rajeev is reviewing golden goose now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      317
+    ]
+  },
+  {
+    "id": 128,
+    "memory_type": "fact",
+    "subject": "Golden Goose",
+    "subject_entity_id": 3,
+    "predicate": "uses",
+    "value": "FastAPI",
+    "value_entity_id": null,
+    "canonical_text": "Golden Goose uses FastAPI for the backend.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"backend\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T22:55:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 326,
+        "excerpt": "golden goose uses fast api for the backend"
+      },
+      {
+        "interaction_id": 329,
+        "excerpt": "golden goose uses fast api for the backend"
+      },
+      {
+        "interaction_id": 348,
+        "excerpt": "golden goose uses fast api for the backend"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      326,
+      329,
+      348
+    ]
+  },
+  {
+    "id": 130,
+    "memory_type": "fact",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "works_in_time_zone",
+    "value": "Singapore",
+    "value_entity_id": null,
+    "canonical_text": "Rajeev works in the Singapore time zone.",
+    "scope": "{\"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T00:12:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 337,
+        "excerpt": "rajeev works in the singapore time zone"
+      },
+      {
+        "interaction_id": 374,
+        "excerpt": "rajeev works in the singapore time zone"
+      },
+      {
+        "interaction_id": 405,
+        "excerpt": "rajeev works in the singapore time zone"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      337,
+      374,
+      405
+    ]
+  },
+  {
+    "id": 131,
+    "memory_type": "episode",
+    "subject": "Neha",
+    "subject_entity_id": 6,
+    "predicate": "mentioned",
+    "value": "Pulse",
+    "value_entity_id": null,
+    "canonical_text": "Neha mentioned Pulse once in passing.",
+    "scope": "{\"app\": \"pulse\", \"context\": \"mention\", \"project\": \"pulse\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T00:33:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 340,
+        "excerpt": "neha mentioned pulse once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      340
+    ]
+  },
+  {
+    "id": 133,
+    "memory_type": "episode",
+    "subject": "arjun",
+    "subject_entity_id": 9,
+    "predicate": "mentioned",
+    "value": "Pulse",
+    "value_entity_id": null,
+    "canonical_text": "Arjun mentioned Pulse once in passing.",
+    "scope": "{\"app\": \"pulse\", \"context\": \"mention\", \"project\": \"pulse\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T01:15:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 346,
+        "excerpt": "arjun mentioned pulse once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      346
+    ]
+  },
+  {
+    "id": 136,
+    "memory_type": "episode",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "mentioned",
+    "value": "Golden Goose",
+    "value_entity_id": null,
+    "canonical_text": "Maya mentioned Golden Goose once in passing.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"mention\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T02:39:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 358,
+        "excerpt": "maya mentioned golden goose once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      358
+    ]
+  },
+  {
+    "id": 139,
+    "memory_type": "episode",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "mentioned",
+    "value": "Golden Goose",
+    "value_entity_id": null,
+    "canonical_text": "Maya mentioned Golden Goose once in passing.",
+    "scope": "{\"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T04:52:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 377,
+        "excerpt": "maya mentioned golden goose once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      377
+    ]
+  },
+  {
+    "id": 140,
+    "memory_type": "fact",
+    "subject": "Orion",
+    "subject_entity_id": 7,
+    "predicate": "uses",
+    "value": "FastAPI",
+    "value_entity_id": null,
+    "canonical_text": "Orion uses FastAPI for the backend.",
+    "scope": "{\"app\": \"orion\", \"context\": \"backend\", \"project\": \"orion\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T05:20:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 381,
+        "excerpt": "Orion uses FastAPI for the backend."
+      },
+      {
+        "interaction_id": 398,
+        "excerpt": "Orion uses FastAPI for the backend."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      381,
+      398
+    ]
+  },
+  {
+    "id": 141,
+    "memory_type": "relationship",
+    "subject": "Aaditya",
+    "subject_entity_id": 5,
+    "predicate": "reviews",
+    "value": "Falcon",
+    "value_entity_id": 11,
+    "canonical_text": "Aaditya is reviewing Falcon now.",
+    "scope": "{\"app\": \"falcon\", \"context\": \"review\", \"project\": \"falcon\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T05:41:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 384,
+        "excerpt": "Actually, Aaditya is reviewing Falcon now."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      384
+    ]
+  },
+  {
+    "id": 142,
+    "memory_type": "episode",
+    "subject": "Neha",
+    "subject_entity_id": 6,
+    "predicate": "mentioned",
+    "value": "Falcon",
+    "value_entity_id": null,
+    "canonical_text": "Neha mentioned Falcon once in passing.",
+    "scope": "{\"app\": \"falcon\", \"context\": \"mention\", \"project\": \"falcon\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T06:16:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 389,
+        "excerpt": "neha mentioned falcon once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      389
+    ]
+  },
+  {
+    "id": 143,
+    "memory_type": "relationship",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "reviews",
+    "value": "Orion",
+    "value_entity_id": 7,
+    "canonical_text": "Priya is reviewing Orion now.",
+    "scope": "{\"app\": \"orion\", \"context\": \"review\", \"project\": \"orion\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T06:51:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 394,
+        "excerpt": "actually priya is reviewing orion now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      394
+    ]
+  },
+  {
+    "id": 144,
+    "memory_type": "relationship",
+    "subject": "Neha",
+    "subject_entity_id": 6,
+    "predicate": "reviewing",
+    "value": "atlas",
+    "value_entity_id": 10,
+    "canonical_text": "Neha is reviewing Atlas now.",
+    "scope": "{\"app\": \"atlas\", \"context\": \"review\", \"project\": \"atlas\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T07:12:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 397,
+        "excerpt": "actually neha is reviewing atlas now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      397
+    ]
+  },
+  {
+    "id": 145,
+    "memory_type": "fact",
+    "subject": "Neha",
+    "subject_entity_id": 6,
+    "predicate": "works_in_time_zone",
+    "value": "Singapore",
+    "value_entity_id": null,
+    "canonical_text": "Neha works in the Singapore time zone.",
+    "scope": "{\"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T07:33:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 400,
+        "excerpt": "neha works in the singapore time zone"
+      },
+      {
+        "interaction_id": 434,
+        "excerpt": "neha works in the singapore time zone"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      400,
+      434
+    ]
+  },
+  {
+    "id": 147,
+    "memory_type": "episode",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "mentioned",
+    "value": "Falcon",
+    "value_entity_id": 11,
+    "canonical_text": "Maya mentioned Falcon once in passing.",
+    "scope": "{\"app\": \"falcon\", \"context\": \"mention\", \"project\": \"falcon\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T07:54:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 403,
+        "excerpt": "Maya mentioned Falcon once in passing."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      403
+    ]
+  },
+  {
+    "id": 150,
+    "memory_type": "episode",
+    "subject": "Neha",
+    "subject_entity_id": 6,
+    "predicate": "mentioned",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Neha mentioned Golden Goose once in passing.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"mention\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T10:07:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 422,
+        "excerpt": "neha mentioned golden goose once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      422
+    ]
+  },
+  {
+    "id": 151,
+    "memory_type": "fact",
+    "subject": "Falcon",
+    "subject_entity_id": 11,
+    "predicate": "uses",
+    "value": "FastAPI",
+    "value_entity_id": null,
+    "canonical_text": "Falcon uses FastAPI for the backend.",
+    "scope": "{\"app\": \"falcon\", \"context\": \"backend\", \"project\": \"falcon\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T10:42:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 427,
+        "excerpt": "Falcon uses FastAPI for the backend."
+      },
+      {
+        "interaction_id": 497,
+        "excerpt": "Falcon uses FastAPI for the backend."
+      },
+      {
+        "interaction_id": 498,
+        "excerpt": "Falcon uses FastAPI for the backend."
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      427,
+      497,
+      498
+    ]
+  },
+  {
+    "id": 153,
+    "memory_type": "relationship",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "reviewing",
+    "value": "Falcon",
+    "value_entity_id": 11,
+    "canonical_text": "Priya is reviewing Falcon now.",
+    "scope": "{\"app\": \"falcon\", \"context\": \"review\", \"project\": \"falcon\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T11:38:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 435,
+        "excerpt": "actually priya is reviewing falcon now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      435
+    ]
+  },
+  {
+    "id": 158,
+    "memory_type": "episode",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "mentioned",
+    "value": "atlas",
+    "value_entity_id": 10,
+    "canonical_text": "Priya mentioned Atlas once in passing.",
+    "scope": "{\"app\": \"atlas\", \"context\": \"mention\", \"project\": \"atlas\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T13:44:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 453,
+        "excerpt": "priya mentioned atlas once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      453
+    ]
+  },
+  {
+    "id": 159,
+    "memory_type": "relationship",
+    "subject": "arjun",
+    "subject_entity_id": 9,
+    "predicate": "reviews",
+    "value": "Orion",
+    "value_entity_id": 7,
+    "canonical_text": "Arjun is reviewing Orion now.",
+    "scope": "{\"app\": \"orion\", \"context\": \"review\", \"project\": \"orion\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T14:26:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 459,
+        "excerpt": "actually arjun is reviewing orion now"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      459
+    ]
+  },
+  {
+    "id": 161,
+    "memory_type": "episode",
+    "subject": "Maya",
+    "subject_entity_id": 8,
+    "predicate": "mentioned",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Maya mentioned Golden Goose once in passing.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"mention\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T15:36:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 469,
+        "excerpt": "Maya mentioned Golden Goose once in passing."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      469
+    ]
+  },
+  {
+    "id": 162,
+    "memory_type": "episode",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "mentioned",
+    "value": "Orion",
+    "value_entity_id": 7,
+    "canonical_text": "Priya mentioned Orion once in passing.",
+    "scope": "{\"app\": \"orion\", \"context\": \"mention\", \"project\": \"orion\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T17:00:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 481,
+        "excerpt": "priya mentioned orion once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      481
+    ]
+  },
+  {
+    "id": 164,
+    "memory_type": "fact",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "home_city",
+    "value": "Pune",
+    "value_entity_id": 14,
+    "canonical_text": "My home city is Pune.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T18:24:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 493,
+        "excerpt": "my home city is pune"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:34:02.494899",
+    "source_interaction_ids": [
+      493
+    ]
+  },
+  {
+    "id": 26,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style",
+    "value": "concise bullet point",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T13:26:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 39,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:33:12.928796",
+    "source_interaction_ids": [
+      39
+    ]
+  },
+  {
+    "id": 61,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "coffee_quality_preference",
+    "value": "good",
+    "value_entity_id": null,
+    "canonical_text": "The coffee was actually pretty good.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T21:08:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 105,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 109,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 230,
+        "excerpt": "that coffee was actually pretty good"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:33:12.928796",
+    "source_interaction_ids": [
+      105,
+      109,
+      230
+    ]
+  },
+  {
+    "id": 78,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style_preference",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T02:51:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 154,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 227,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:33:12.928796",
+    "source_interaction_ids": [
+      154,
+      227
+    ]
+  },
+  {
+    "id": 149,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "email_style",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "global",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T09:32:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 417,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 424,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 468,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:33:12.928796",
+    "source_interaction_ids": [
+      417,
+      424,
+      468
+    ]
+  },
+  {
+    "id": 2,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "working_on",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "I'm working on Golden Goose.",
+    "scope": "{\"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T09:20:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 2,
+        "excerpt": "im working on golden goose"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:32:04.708108",
+    "source_interaction_ids": [
+      2
+    ]
+  },
+  {
+    "id": 11,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "contributing_to",
+    "value": "Golden Goose rollout",
+    "value_entity_id": null,
+    "canonical_text": "I'm also contributing to the Golden Goose rollout.",
+    "scope": "{\"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T10:17:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 12,
+        "excerpt": "im also contributing to the golden goose rollout"
+      },
+      {
+        "interaction_id": 71,
+        "excerpt": "im also contributing to the golden goose rollout"
+      },
+      {
+        "interaction_id": 88,
+        "excerpt": "im also contributing to the golden goose rollout"
+      },
+      {
+        "interaction_id": 177,
+        "excerpt": "im also contributing to the golden goose rollout"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:32:04.708108",
+    "source_interaction_ids": [
+      12,
+      71,
+      88,
+      177
+    ]
+  },
+  {
+    "id": 12,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "contributing_to",
+    "value": "Atlas rollout",
+    "value_entity_id": null,
+    "canonical_text": "I'm also contributing to the Atlas rollout.",
+    "scope": "{\"project\": \"atlas\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T10:24:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 13,
+        "excerpt": "im also contributing to the atlas rollout"
+      },
+      {
+        "interaction_id": 47,
+        "excerpt": "im also contributing to the atlas rollout"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:32:04.708108",
+    "source_interaction_ids": [
+      13,
+      47
+    ]
+  },
+  {
+    "id": 28,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "contributing_to",
+    "value": "Pulse rollout",
+    "value_entity_id": null,
+    "canonical_text": "I'm also contributing to the Pulse rollout.",
+    "scope": "{\"project\": \"pulse\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T13:40:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 41,
+        "excerpt": "im also contributing to the pulse rollout"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:32:04.708108",
+    "source_interaction_ids": [
+      41
+    ]
+  },
+  {
+    "id": 31,
+    "memory_type": "fact",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "contributing_to",
+    "value": "Falcon rollout",
+    "value_entity_id": null,
+    "canonical_text": "I'm also contributing to the Falcon rollout.",
+    "scope": "{\"project\": \"falcon\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T14:01:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 44,
+        "excerpt": "im also contributing to the falcon rollout"
+      },
+      {
+        "interaction_id": 48,
+        "excerpt": "im also contributing to the falcon rollout"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:32:04.708108",
+    "source_interaction_ids": [
+      44,
+      48
+    ]
+  },
+  {
+    "id": 37,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "contributes_to",
+    "value": "Orion rollout",
+    "value_entity_id": null,
+    "canonical_text": "I'm also contributing to the Orion rollout.",
+    "scope": "{\"app\": \"orion\", \"context\": \"rollout\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T15:32:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 57,
+        "excerpt": "im also contributing to the orion rollout"
+      },
+      {
+        "interaction_id": 93,
+        "excerpt": "im also contributing to the orion rollout"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:32:04.708108",
+    "source_interaction_ids": [
+      57,
+      93
+    ]
+  },
+  {
+    "id": 46,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "contributing_to",
+    "value": "Falcon rollout",
+    "value_entity_id": null,
+    "canonical_text": "I'm also contributing to the Falcon rollout.",
+    "scope": "{\"app\": \"falcon\", \"project\": \"falcon\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T17:31:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 74,
+        "excerpt": "im also contributing to the falcon rollout"
+      },
+      {
+        "interaction_id": 247,
+        "excerpt": "im also contributing to the falcon rollout"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:32:04.708108",
+    "source_interaction_ids": [
+      74,
+      247
+    ]
+  },
+  {
+    "id": 64,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "contributes_to",
+    "value": "Orion rollout",
+    "value_entity_id": null,
+    "canonical_text": "I'm also contributing to the Orion rollout.",
+    "scope": "{\"app\": \"orion\", \"context\": \"rollout\", \"project\": \"orion\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T22:46:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 119,
+        "excerpt": "im also contributing to the orion rollout"
+      },
+      {
+        "interaction_id": 207,
+        "excerpt": "im also contributing to the orion rollout"
+      },
+      {
+        "interaction_id": 254,
+        "excerpt": "im also contributing to the orion rollout"
+      },
+      {
+        "interaction_id": 280,
+        "excerpt": "im also contributing to the orion rollout"
+      },
+      {
+        "interaction_id": 294,
+        "excerpt": "im also contributing to the orion rollout"
+      },
+      {
+        "interaction_id": 295,
+        "excerpt": "im also contributing to the orion rollout"
+      },
+      {
+        "interaction_id": 365,
+        "excerpt": "im also contributing to the orion rollout"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:32:04.708108",
+    "source_interaction_ids": [
+      119,
+      207,
+      254,
+      280,
+      294,
+      295,
+      365
+    ]
+  },
+  {
+    "id": 73,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "contributing_to",
+    "value": "Atlas rollout",
+    "value_entity_id": null,
+    "canonical_text": "I'm also contributing to the Atlas rollout.",
+    "scope": "{\"app\": \"atlas\", \"context\": \"rollout\", \"project\": \"atlas\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T01:27:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 142,
+        "excerpt": "im also contributing to the atlas rollout"
+      },
+      {
+        "interaction_id": 172,
+        "excerpt": "im also contributing to the atlas rollout"
+      },
+      {
+        "interaction_id": 237,
+        "excerpt": "im also contributing to the atlas rollout"
+      },
+      {
+        "interaction_id": 447,
+        "excerpt": "im also contributing to the atlas rollout"
+      },
+      {
+        "interaction_id": 487,
+        "excerpt": "im also contributing to the atlas rollout"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:32:04.708108",
+    "source_interaction_ids": [
+      142,
+      172,
+      237,
+      447,
+      487
+    ]
+  },
+  {
+    "id": 80,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "contributing_to",
+    "value": "Pulse rollout",
+    "value_entity_id": null,
+    "canonical_text": "I'm also contributing to the Pulse rollout.",
+    "scope": "{\"app\": \"pulse\", \"context\": \"rollout\", \"project\": \"pulse\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T03:54:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 163,
+        "excerpt": "im also contributing to the pulse rollout"
+      },
+      {
+        "interaction_id": 164,
+        "excerpt": "im also contributing to the pulse rollout"
+      },
+      {
+        "interaction_id": 327,
+        "excerpt": "im also contributing to the pulse rollout"
+      },
+      {
+        "interaction_id": 364,
+        "excerpt": "im also contributing to the pulse rollout"
+      },
+      {
+        "interaction_id": 456,
+        "excerpt": "im also contributing to the pulse rollout"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:32:04.708108",
+    "source_interaction_ids": [
+      163,
+      164,
+      327,
+      364,
+      456
+    ]
+  },
+  {
+    "id": 157,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "contributing_to",
+    "value": "Golden Goose rollout",
+    "value_entity_id": null,
+    "canonical_text": "I'm also contributing to the Golden Goose rollout.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"rollout\", \"project\": \"golden goose\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T13:30:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 451,
+        "excerpt": "im also contributing to the golden goose rollout"
+      },
+      {
+        "interaction_id": 461,
+        "excerpt": "im also contributing to the golden goose rollout"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:32:04.708108",
+    "source_interaction_ids": [
+      451,
+      461
+    ]
+  },
+  {
+    "id": 148,
+    "memory_type": "fact",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "home_city",
+    "value": "Pune",
+    "value_entity_id": null,
+    "canonical_text": "My home city is Pune.",
+    "scope": "global",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T08:36:00",
+    "valid_until": "2026-09-03T18:24:00",
+    "source_evidence": [
+      {
+        "interaction_id": 409,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 411,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 466,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 476,
+        "excerpt": "my home city is pune"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:28:28.167326",
+    "source_interaction_ids": [
+      409,
+      411,
+      466,
+      476
+    ]
+  },
+  {
+    "id": 163,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "email_style",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"slack\", \"context\": \"work messaging\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T17:28:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 485,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:25:08.035442",
+    "source_interaction_ids": [
+      485
+    ]
+  },
+  {
+    "id": 160,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "email_style",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"notes\", \"context\": \"other\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T14:33:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 460,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:16:34.080391",
+    "source_interaction_ids": [
+      460
+    ]
+  },
+  {
+    "id": 156,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "email_style",
+    "value": "longer reports",
+    "value_entity_id": null,
+    "canonical_text": "Maybe I like longer reports, but I'm not sure.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"email\"}",
+    "status": "tentative",
+    "certainty": "tentative",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T13:16:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 449,
+        "excerpt": "maybe i like longer reports but im not sure"
+      }
+    ],
+    "confidence": 0.85,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:11:40.160208",
+    "source_interaction_ids": [
+      449
+    ]
+  },
+  {
+    "id": 155,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "standup_update_timing",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"slack\", \"context\": \"work messaging\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T12:27:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 442,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 474,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:09:59.746870",
+    "source_interaction_ids": [
+      442,
+      474
+    ]
+  },
+  {
+    "id": 154,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "report_length_preference",
+    "value": "longer reports",
+    "value_entity_id": null,
+    "canonical_text": "I might like longer reports, but I'm not sure.",
+    "scope": "{\"app\": \"notes\", \"context\": \"other\"}",
+    "status": "tentative",
+    "certainty": "tentative",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T11:45:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 436,
+        "excerpt": "maybe i like longer reports but im not sure"
+      }
+    ],
+    "confidence": 0.85,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:07:48.892512",
+    "source_interaction_ids": [
+      436
+    ]
+  },
+  {
+    "id": 152,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "email_style",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"email\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T10:49:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 428,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 455,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 500,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:05:28.108361",
+    "source_interaction_ids": [
+      428,
+      455,
+      500
+    ]
+  },
+  {
+    "id": 121,
+    "memory_type": "episode",
+    "subject": "Neha",
+    "subject_entity_id": 6,
+    "predicate": "mentioned",
+    "value": "Golden Goose",
+    "value_entity_id": null,
+    "canonical_text": "Neha mentioned Golden Goose once in passing.",
+    "scope": "{\"app\": \"golden goose\", \"context\": \"mention\", \"project\": \"golden goose\"}",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T19:53:00",
+    "valid_until": "2026-09-03T10:07:00",
+    "source_evidence": [
+      {
+        "interaction_id": 300,
+        "excerpt": "neha mentioned golden goose once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:03:23.651039",
+    "source_interaction_ids": [
+      300
+    ]
+  },
+  {
+    "id": 10,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "email_style",
+    "value": "concise bullet point",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "global",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T10:10:00",
+    "valid_until": "2026-09-03T09:32:00",
+    "source_evidence": [
+      {
+        "interaction_id": 11,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T14:01:44.930102",
+    "source_interaction_ids": [
+      11
+    ]
+  },
+  {
+    "id": 146,
+    "memory_type": "fact",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "home_city",
+    "value": "Pune",
+    "value_entity_id": 14,
+    "canonical_text": "My home city is Pune.",
+    "scope": "global",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T07:40:00",
+    "valid_until": "2026-09-03T08:36:00",
+    "source_evidence": [
+      {
+        "interaction_id": 401,
+        "excerpt": "my home city is pune"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:59:37.684326",
+    "source_interaction_ids": [
+      401
+    ]
+  },
+  {
+    "id": 137,
+    "memory_type": "fact",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "home_city",
+    "value": "Pune",
+    "value_entity_id": null,
+    "canonical_text": "My home city is Pune.",
+    "scope": "global",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T03:35:00",
+    "valid_until": "2026-09-03T07:40:00",
+    "source_evidence": [
+      {
+        "interaction_id": 366,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 382,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 387,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 390,
+        "excerpt": "my home city is pune"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:56:30.341738",
+    "source_interaction_ids": [
+      366,
+      382,
+      387,
+      390
+    ]
+  },
+  {
+    "id": 138,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"slack\", \"context\": \"work messaging\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T04:17:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 372,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:44:17.731748",
+    "source_interaction_ids": [
+      372
+    ]
+  },
+  {
+    "id": 135,
+    "memory_type": "fact",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "home_city",
+    "value": "Pune",
+    "value_entity_id": 14,
+    "canonical_text": "My home city is Pune.",
+    "scope": "global",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T02:25:00",
+    "valid_until": "2026-09-03T03:35:00",
+    "source_evidence": [
+      {
+        "interaction_id": 356,
+        "excerpt": "my home city is pune"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:43:08.282109",
+    "source_interaction_ids": [
+      356
+    ]
+  },
+  {
+    "id": 15,
+    "memory_type": "fact",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "home_city",
+    "value": "Pune",
+    "value_entity_id": null,
+    "canonical_text": "My home city is Pune.",
+    "scope": "global",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T10:45:00",
+    "valid_until": "2026-09-03T02:25:00",
+    "source_evidence": [
+      {
+        "interaction_id": 16,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 17,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 32,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 85,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 97,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 100,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 126,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 128,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 133,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 136,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 146,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 161,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 182,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 190,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 242,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 243,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 261,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 270,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 306,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 313,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 330,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 334,
+        "excerpt": "my home city is pune"
+      },
+      {
+        "interaction_id": 345,
+        "excerpt": "my home city is pune"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:39:14.861324",
+    "source_interaction_ids": [
+      16,
+      17,
+      32,
+      85,
+      97,
+      100,
+      126,
+      128,
+      133,
+      136,
+      146,
+      161,
+      182,
+      190,
+      242,
+      243,
+      261,
+      270,
+      306,
+      313,
+      330,
+      334,
+      345
+    ]
+  },
+  {
+    "id": 134,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"email\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T02:04:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 353,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 369,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 399,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:38:15.769186",
+    "source_interaction_ids": [
+      353,
+      369,
+      399
+    ]
+  },
+  {
+    "id": 132,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"whatsapp\", \"context\": \"personal messaging\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-03T00:54:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 343,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 393,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:34:52.323731",
+    "source_interaction_ids": [
+      343,
+      393
+    ]
+  },
+  {
+    "id": 129,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_timing",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"email\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T23:30:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 331,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 332,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:29:55.660419",
+    "source_interaction_ids": [
+      331,
+      332
+    ]
+  },
+  {
+    "id": 127,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "food_preference",
+    "value": "vegetarian",
+    "value_entity_id": null,
+    "canonical_text": "I prefer vegetarian food for team lunches.",
+    "scope": "{\"app\": \"vs code\", \"context\": \"team_lunch\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T22:41:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 324,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 444,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:25:09.246216",
+    "source_interaction_ids": [
+      324,
+      444
+    ]
+  },
+  {
+    "id": 123,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "food_preference",
+    "value": "vegetarian",
+    "value_entity_id": null,
+    "canonical_text": "I prefer vegetarian food for team lunches.",
+    "scope": "{\"app\": \"notes\", \"context\": \"team_lunch\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T21:03:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 310,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 396,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 491,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:13:16.237810",
+    "source_interaction_ids": [
+      310,
+      396,
+      491
+    ]
+  },
+  {
+    "id": 88,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "food_preference",
+    "value": "vegetarian",
+    "value_entity_id": null,
+    "canonical_text": "I prefer vegetarian food for team lunches.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"team_lunch\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T07:10:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 191,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 304,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 308,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 391,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 477,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 489,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:09:07.859179",
+    "source_interaction_ids": [
+      191,
+      304,
+      308,
+      391,
+      477,
+      489
+    ]
+  },
+  {
+    "id": 83,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "food_preference",
+    "value": "vegetarian",
+    "value_entity_id": null,
+    "canonical_text": "I prefer vegetarian food for team lunches.",
+    "scope": "{\"app\": \"whatsapp\", \"context\": \"team_lunch\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T05:18:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 175,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 301,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 323,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 406,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:07:08.937812",
+    "source_interaction_ids": [
+      175,
+      301,
+      323,
+      406
+    ]
+  },
+  {
+    "id": 120,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "email_style",
+    "value": "concise bullet point updates before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send concise bullet-point updates before stand-up.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"standup\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T19:39:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 298,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 309,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:04:21.801502",
+    "source_interaction_ids": [
+      298,
+      309
+    ]
+  },
+  {
+    "id": 119,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "food_preference",
+    "value": "vegetarian",
+    "value_entity_id": null,
+    "canonical_text": "I prefer vegetarian food for team lunches.",
+    "scope": "{\"app\": \"slack\", \"context\": \"team_lunch\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T19:32:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 297,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 352,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 404,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 440,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 463,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T13:03:29.231559",
+    "source_interaction_ids": [
+      297,
+      352,
+      404,
+      440,
+      463
+    ]
+  },
+  {
+    "id": 117,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "email_style",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"context\": \"general\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T18:36:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 289,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T12:56:17.637938",
+    "source_interaction_ids": [
+      289
+    ]
+  },
+  {
+    "id": 114,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "coffee_quality_preference",
+    "value": "good",
+    "value_entity_id": null,
+    "canonical_text": "That coffee was actually pretty good.",
+    "scope": "{\"app\": \"slack\", \"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T17:47:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 282,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 419,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 420,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 421,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 492,
+        "excerpt": "that coffee was actually pretty good"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T12:51:36.080457",
+    "source_interaction_ids": [
+      282,
+      419,
+      420,
+      421,
+      492
+    ]
+  },
+  {
+    "id": 109,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "coffee_quality_preference",
+    "value": "good",
+    "value_entity_id": null,
+    "canonical_text": "That coffee was actually pretty good.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"email\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T14:10:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 251,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 260,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 333,
+        "excerpt": "That coffee was actually pretty good."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T12:28:49.081411",
+    "source_interaction_ids": [
+      251,
+      260,
+      333
+    ]
+  },
+  {
+    "id": 107,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "sends_updates_before_standup",
+    "value": "true",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"whatsapp\", \"context\": \"personal messaging\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T12:25:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 236,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 246,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 257,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T12:16:04.821028",
+    "source_interaction_ids": [
+      236,
+      246,
+      257
+    ]
+  },
+  {
+    "id": 101,
+    "memory_type": "episode",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "mentioned",
+    "value": "atlas",
+    "value_entity_id": 10,
+    "canonical_text": "Rajeev mentioned Atlas once in passing.",
+    "scope": "global",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T11:15:00",
+    "valid_until": "2026-09-02T12:04:00",
+    "source_evidence": [
+      {
+        "interaction_id": 226,
+        "excerpt": "rajeev mentioned atlas once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T12:12:45.842955",
+    "source_interaction_ids": [
+      226
+    ]
+  },
+  {
+    "id": 68,
+    "memory_type": "episode",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "mentioned",
+    "value": "Orion",
+    "value_entity_id": 7,
+    "canonical_text": "Rajeev mentioned Orion once in passing.",
+    "scope": "global",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T00:17:00",
+    "valid_until": "2026-09-02T11:15:00",
+    "source_evidence": [
+      {
+        "interaction_id": 132,
+        "excerpt": "rajeev mentioned orion once in passing"
+      },
+      {
+        "interaction_id": 158,
+        "excerpt": "rajeev mentioned orion once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T12:03:26.497665",
+    "source_interaction_ids": [
+      132,
+      158
+    ]
+  },
+  {
+    "id": 96,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style_preference",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"vs code\", \"context\": \"developer\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T09:51:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 214,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T11:50:49.244039",
+    "source_interaction_ids": [
+      214
+    ]
+  },
+  {
+    "id": 95,
+    "memory_type": "episode",
+    "subject": "Rajeev",
+    "subject_entity_id": 1,
+    "predicate": "mentioned",
+    "value": "Pulse",
+    "value_entity_id": null,
+    "canonical_text": "Rajeev mentioned Pulse once in passing.",
+    "scope": "{\"app\": \"pulse\", \"project\": \"pulse\"}",
+    "status": "historical",
+    "certainty": "confirmed",
+    "temporal_status": "historical",
+    "valid_from": "2026-09-02T09:16:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 209,
+        "excerpt": "rajeev mentioned pulse once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T11:46:24.234046",
+    "source_interaction_ids": [
+      209
+    ]
+  },
+  {
+    "id": 94,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style_preference",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"context\": \"work messaging\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T09:09:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 208,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T11:45:15.081808",
+    "source_interaction_ids": [
+      208
+    ]
+  },
+  {
+    "id": 92,
+    "memory_type": "episode",
+    "subject": "arjun",
+    "subject_entity_id": 9,
+    "predicate": "mentioned",
+    "value": "Pulse",
+    "value_entity_id": 13,
+    "canonical_text": "Arjun mentioned Pulse once in passing.",
+    "scope": "{\"app\": \"pulse\", \"project\": \"pulse\"}",
+    "status": "historical",
+    "certainty": "confirmed",
+    "temporal_status": "historical",
+    "valid_from": "2026-09-02T08:48:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 205,
+        "excerpt": "arjun mentioned pulse once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T11:41:42.734646",
+    "source_interaction_ids": [
+      205
+    ]
+  },
+  {
+    "id": 91,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style_preference",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"work messaging\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T08:41:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 204,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 222,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T11:40:26.419467",
+    "source_interaction_ids": [
+      204,
+      222
+    ]
+  },
+  {
+    "id": 40,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "food_preference",
+    "value": "vegetarian",
+    "value_entity_id": null,
+    "canonical_text": "I prefer vegetarian food for team lunches.",
+    "scope": "{\"context\": \"team_lunch\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T16:21:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 64,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 108,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 200,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 249,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 293,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 357,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 425,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 473,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      },
+      {
+        "interaction_id": 486,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T11:37:21.845216",
+    "source_interaction_ids": [
+      64,
+      108,
+      200,
+      249,
+      293,
+      357,
+      425,
+      473,
+      486
+    ]
+  },
+  {
+    "id": 86,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style_preference",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"whatsapp\", \"context\": \"work messaging\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T06:28:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 185,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 187,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T11:23:10.334114",
+    "source_interaction_ids": [
+      185,
+      187
+    ]
+  },
+  {
+    "id": 85,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "meet",
+    "value": "Maya",
+    "value_entity_id": 8,
+    "canonical_text": "Meet Maya at 3 PM tomorrow.",
+    "scope": "global",
+    "status": "future",
+    "certainty": "confirmed",
+    "temporal_status": "future",
+    "valid_from": "2026-09-02T06:14:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 183,
+        "excerpt": "meet maya at three tomorrow"
+      },
+      {
+        "interaction_id": 252,
+        "excerpt": "meet maya at three tomorrow"
+      },
+      {
+        "interaction_id": 342,
+        "excerpt": "Meet Maya at 3 PM tomorrow."
+      },
+      {
+        "interaction_id": 361,
+        "excerpt": "meet maya at three tomorrow"
+      },
+      {
+        "interaction_id": 496,
+        "excerpt": "meet maya at three tomorrow"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T11:21:17.771165",
+    "source_interaction_ids": [
+      183,
+      252,
+      342,
+      361,
+      496
+    ]
+  },
+  {
+    "id": 82,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "coffee_quality_preference",
+    "value": "good",
+    "value_entity_id": null,
+    "canonical_text": "That coffee was actually pretty good.",
+    "scope": "{\"app\": \"notes\", \"context\": \"other\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T05:04:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 173,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 215,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 360,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 410,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 423,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 465,
+        "excerpt": "that coffee was actually pretty good"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T11:11:32.065941",
+    "source_interaction_ids": [
+      173,
+      215,
+      360,
+      410,
+      423,
+      465
+    ]
+  },
+  {
+    "id": 77,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style_preference",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"slack\", \"context\": \"work messaging\"}",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T02:37:00",
+    "valid_until": "2026-09-02T04:29:00",
+    "source_evidence": [
+      {
+        "interaction_id": 152,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T11:06:18.039916",
+    "source_interaction_ids": [
+      152
+    ]
+  },
+  {
+    "id": 81,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style_preference",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"slack\", \"context\": \"work messaging\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T04:29:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 168,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 188,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 192,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T11:06:18.037758",
+    "source_interaction_ids": [
+      168,
+      188,
+      192
+    ]
+  },
+  {
+    "id": 69,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style_preference",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"notes\", \"context\": \"other\"}",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T00:38:00",
+    "valid_until": "2026-09-02T02:23:00",
+    "source_evidence": [
+      {
+        "interaction_id": 135,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T10:49:50.438464",
+    "source_interaction_ids": [
+      135
+    ]
+  },
+  {
+    "id": 75,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style_preference",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"notes\", \"context\": \"other\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T02:23:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 150,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T10:49:50.435667",
+    "source_interaction_ids": [
+      150
+    ]
+  },
+  {
+    "id": 74,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style_preference",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"whatsapp\", \"context\": \"personal\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T02:16:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 149,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 166,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T10:48:47.814788",
+    "source_interaction_ids": [
+      149,
+      166
+    ]
+  },
+  {
+    "id": 71,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style_preference",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"email\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-02T01:06:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 139,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 216,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 1.0,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T10:39:46.364251",
+    "source_interaction_ids": [
+      139,
+      216
+    ]
+  },
+  {
+    "id": 67,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "coffee_quality_preference",
+    "value": "good",
+    "value_entity_id": null,
+    "canonical_text": "The coffee was actually pretty good.",
+    "scope": "{\"app\": \"whatsapp\", \"context\": \"personal\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T23:56:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 129,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 184,
+        "excerpt": "That coffee was actually pretty good."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T10:31:26.213132",
+    "source_interaction_ids": [
+      129,
+      184
+    ]
+  },
+  {
+    "id": 59,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_timing",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T20:05:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 96,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 112,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T10:05:52.369799",
+    "source_interaction_ids": [
+      96,
+      112
+    ]
+  },
+  {
+    "id": 58,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "meet",
+    "value": "Priya",
+    "value_entity_id": 4,
+    "canonical_text": "Meet Priya at 3 PM tomorrow.",
+    "scope": "global",
+    "status": "future",
+    "certainty": "confirmed",
+    "temporal_status": "future",
+    "valid_from": "2026-09-01T19:58:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 95,
+        "excerpt": "Meet Priya at 3 PM tomorrow."
+      },
+      {
+        "interaction_id": 213,
+        "excerpt": "meet priya at three tomorrow"
+      },
+      {
+        "interaction_id": 315,
+        "excerpt": "Meet Priya at 3 PM tomorrow."
+      },
+      {
+        "interaction_id": 359,
+        "excerpt": "meet priya at three tomorrow"
+      },
+      {
+        "interaction_id": 376,
+        "excerpt": "meet priya at three tomorrow"
+      },
+      {
+        "interaction_id": 464,
+        "excerpt": "meet priya at three tomorrow"
+      },
+      {
+        "interaction_id": 480,
+        "excerpt": "meet priya at three tomorrow"
+      },
+      {
+        "interaction_id": 494,
+        "excerpt": "Meet Priya at 3 PM tomorrow."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T10:04:57.744585",
+    "source_interaction_ids": [
+      95,
+      213,
+      315,
+      359,
+      376,
+      464,
+      480,
+      494
+    ]
+  },
+  {
+    "id": 56,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_timing",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"vs code\", \"context\": \"developer\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T19:23:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 90,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 120,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:59:40.091582",
+    "source_interaction_ids": [
+      90,
+      120
+    ]
+  },
+  {
+    "id": 55,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "meet",
+    "value": "arjun",
+    "value_entity_id": 9,
+    "canonical_text": "Meet Arjun at 3 PM tomorrow.",
+    "scope": "global",
+    "status": "future",
+    "certainty": "confirmed",
+    "temporal_status": "future",
+    "valid_from": "2026-09-01T19:16:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 89,
+        "excerpt": "meet arjun at three tomorrow"
+      },
+      {
+        "interaction_id": 94,
+        "excerpt": "meet arjun at three tomorrow"
+      },
+      {
+        "interaction_id": 176,
+        "excerpt": "Meet Arjun at 3 PM tomorrow."
+      },
+      {
+        "interaction_id": 221,
+        "excerpt": "meet arjun at three tomorrow"
+      },
+      {
+        "interaction_id": 338,
+        "excerpt": "Meet Arjun at 3 PM tomorrow."
+      },
+      {
+        "interaction_id": 362,
+        "excerpt": "Meet Arjun at 3 PM tomorrow."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:58:43.113920",
+    "source_interaction_ids": [
+      89,
+      94,
+      176,
+      221,
+      338,
+      362
+    ]
+  },
+  {
+    "id": 52,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style",
+    "value": "concise bullet point updates",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"notes\", \"context\": \"other\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T18:41:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 84,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 103,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 368,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 385,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:53:34.539211",
+    "source_interaction_ids": [
+      84,
+      103,
+      368,
+      385
+    ]
+  },
+  {
+    "id": 48,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "report_length_preference",
+    "value": "longer",
+    "value_entity_id": null,
+    "canonical_text": "Maybe I like longer reports, but I'm not sure.",
+    "scope": "{\"app\": \"whatsapp\", \"context\": \"personal_messaging\"}",
+    "status": "tentative",
+    "certainty": "tentative",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T17:45:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 76,
+        "excerpt": "maybe i like longer reports but im not sure"
+      }
+    ],
+    "confidence": 0.8,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:47:46.146200",
+    "source_interaction_ids": [
+      76
+    ]
+  },
+  {
+    "id": 30,
+    "memory_type": "episode",
+    "subject": "Priya",
+    "subject_entity_id": 4,
+    "predicate": "mentioned",
+    "value": "Golden Goose",
+    "value_entity_id": 3,
+    "canonical_text": "Priya mentioned Golden Goose once in passing.",
+    "scope": "global",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T13:54:00",
+    "valid_until": "2026-09-01T17:38:00",
+    "source_evidence": [
+      {
+        "interaction_id": 43,
+        "excerpt": "priya mentioned golden goose once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:46:47.260415",
+    "source_interaction_ids": [
+      43
+    ]
+  },
+  {
+    "id": 45,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "sends_updates_before_standup",
+    "value": "true",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"email\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T16:56:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 69,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:41:45.036146",
+    "source_interaction_ids": [
+      69
+    ]
+  },
+  {
+    "id": 43,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "meet",
+    "value": "Neha",
+    "value_entity_id": 6,
+    "canonical_text": "Meet Neha at 3 PM tomorrow.",
+    "scope": "global",
+    "status": "future",
+    "certainty": "confirmed",
+    "temporal_status": "future",
+    "valid_from": "2026-09-01T16:42:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 67,
+        "excerpt": "meet neha at three tomorrow"
+      },
+      {
+        "interaction_id": 180,
+        "excerpt": "meet neha at three tomorrow"
+      },
+      {
+        "interaction_id": 299,
+        "excerpt": "meet neha at three tomorrow"
+      },
+      {
+        "interaction_id": 336,
+        "excerpt": "Meet Neha at 3 PM tomorrow."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:39:53.587402",
+    "source_interaction_ids": [
+      67,
+      180,
+      299,
+      336
+    ]
+  },
+  {
+    "id": 34,
+    "memory_type": "episode",
+    "subject": "arjun",
+    "subject_entity_id": 9,
+    "predicate": "mentioned",
+    "value": "atlas",
+    "value_entity_id": 10,
+    "canonical_text": "Arjun mentioned Atlas once in passing.",
+    "scope": "{\"project\": \"atlas\"}",
+    "status": "historical",
+    "certainty": "confirmed",
+    "temporal_status": "historical",
+    "valid_from": "2026-09-01T15:11:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 54,
+        "excerpt": "arjun mentioned atlas once in passing"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:27:05.804487",
+    "source_interaction_ids": [
+      54
+    ]
+  },
+  {
+    "id": 33,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_style",
+    "value": "concise bullet point",
+    "value_entity_id": null,
+    "canonical_text": "I prefer concise bullet-point updates.",
+    "scope": "{\"app\": \"vs code\", \"context\": \"developer\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T14:43:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 50,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 51,
+        "excerpt": "i prefer concise bullet point updates"
+      },
+      {
+        "interaction_id": 60,
+        "excerpt": "i prefer concise bullet point updates"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:23:19.068148",
+    "source_interaction_ids": [
+      50,
+      51,
+      60
+    ]
+  },
+  {
+    "id": 29,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_timing_preference",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T13:47:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 42,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 287,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:16:33.641859",
+    "source_interaction_ids": [
+      42,
+      287
+    ]
+  },
+  {
+    "id": 25,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "coffee_quality_preference",
+    "value": "good",
+    "value_entity_id": null,
+    "canonical_text": "The coffee was actually pretty good.",
+    "scope": "{\"app\": \"vs code\", \"context\": \"developer\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T13:19:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 38,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 165,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 307,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 328,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 344,
+        "excerpt": "that coffee was actually pretty good"
+      },
+      {
+        "interaction_id": 355,
+        "excerpt": "that coffee was actually pretty good"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:13:07.033525",
+    "source_interaction_ids": [
+      38,
+      165,
+      307,
+      328,
+      344,
+      355
+    ]
+  },
+  {
+    "id": 22,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "food_preference",
+    "value": "vegetarian",
+    "value_entity_id": null,
+    "canonical_text": "I prefer vegetarian food for team lunches.",
+    "scope": "{\"app\": \"whatsapp\", \"context\": \"personal\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T11:48:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 25,
+        "excerpt": "i prefer vegetarian food for team lunches"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "personal messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:05:21.583615",
+    "source_interaction_ids": [
+      25
+    ]
+  },
+  {
+    "id": 21,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "meet",
+    "value": "Rajeev",
+    "value_entity_id": 1,
+    "canonical_text": "I will meet Rajeev at 3 PM tomorrow.",
+    "scope": "global",
+    "status": "future",
+    "certainty": "confirmed",
+    "temporal_status": "future",
+    "valid_from": "2026-09-01T11:41:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 24,
+        "excerpt": "Meet Rajeev at 3 PM tomorrow."
+      },
+      {
+        "interaction_id": 441,
+        "excerpt": "meet rajeev at three tomorrow"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:04:35.312403",
+    "source_interaction_ids": [
+      24,
+      441
+    ]
+  },
+  {
+    "id": 18,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "meet_neha_at",
+    "value": "3 PM tomorrow",
+    "value_entity_id": null,
+    "canonical_text": "Meet Neha at 3 PM tomorrow.",
+    "scope": "global",
+    "status": "future",
+    "certainty": "confirmed",
+    "temporal_status": "future",
+    "valid_from": "2026-09-01T11:13:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 20,
+        "excerpt": "meet neha at three tomorrow"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:01:48.579486",
+    "source_interaction_ids": [
+      20
+    ]
+  },
+  {
+    "id": 17,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_timing",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"slack\", \"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T11:06:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 19,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 31,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 34,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 117,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:00:59.040585",
+    "source_interaction_ids": [
+      19,
+      31,
+      34,
+      117
+    ]
+  },
+  {
+    "id": 16,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "meet_with",
+    "value": "Rajeev",
+    "value_entity_id": 1,
+    "canonical_text": "Meet Rajeev at 3 PM tomorrow.",
+    "scope": "global",
+    "status": "future",
+    "certainty": "confirmed",
+    "temporal_status": "future",
+    "valid_from": "2026-09-01T10:59:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 18,
+        "excerpt": "meet rajeev at three tomorrow"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "developer",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T09:00:15.634545",
+    "source_interaction_ids": [
+      18
+    ]
+  },
+  {
+    "id": 14,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_timing",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T10:38:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 15,
+        "excerpt": "i usually send updates before standup"
+      },
+      {
+        "interaction_id": 35,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T08:58:13.631652",
+    "source_interaction_ids": [
+      15,
+      35
+    ]
+  },
+  {
+    "id": 9,
+    "memory_type": "episode",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "meet",
+    "value": "Aaditya",
+    "value_entity_id": 5,
+    "canonical_text": "Meet Aaditya at 3 PM tomorrow.",
+    "scope": "global",
+    "status": "future",
+    "certainty": "confirmed",
+    "temporal_status": "future",
+    "valid_from": "2026-09-01T10:03:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 10,
+        "excerpt": "meet aaditya at three tomorrow"
+      },
+      {
+        "interaction_id": 210,
+        "excerpt": "Meet Aaditya at 3 PM tomorrow."
+      },
+      {
+        "interaction_id": 395,
+        "excerpt": "Meet Aaditya at 3 PM tomorrow."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T08:55:55.788804",
+    "source_interaction_ids": [
+      10,
+      210,
+      395
+    ]
+  },
+  {
+    "id": 8,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "update_timing",
+    "value": "before standup",
+    "value_entity_id": null,
+    "canonical_text": "I usually send updates before stand-up.",
+    "scope": "{\"app\": \"unknown\", \"context\": \"work\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T09:56:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 9,
+        "excerpt": "i usually send updates before standup"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T08:55:31.836533",
+    "source_interaction_ids": [
+      9
+    ]
+  },
+  {
+    "id": 7,
+    "memory_type": "relationship",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "manager",
+    "value": "Rajeev",
+    "value_entity_id": 1,
+    "canonical_text": "Rajeev used to be my manager.",
+    "scope": "global",
+    "status": "historical",
+    "certainty": "confirmed",
+    "temporal_status": "historical",
+    "valid_from": "2026-09-01T11:00:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 7,
+        "excerpt": "My manager changed from Rajeev to Priya."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "unknown",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T08:55:06.400784",
+    "source_interaction_ids": [
+      7
+    ]
+  },
+  {
+    "id": 1,
+    "memory_type": "relationship",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "manager",
+    "value": "Rajeev",
+    "value_entity_id": 1,
+    "canonical_text": "Rajeev is my manager.",
+    "scope": "global",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T09:00:00",
+    "valid_until": "2026-09-01T11:00:00",
+    "source_evidence": [
+      {
+        "interaction_id": 1,
+        "excerpt": "Rajeev is my manager."
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "work messaging",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T08:55:06.398685",
+    "source_interaction_ids": [
+      1
+    ]
+  },
+  {
+    "id": 4,
+    "memory_type": "fact",
+    "subject": "Golden Goose",
+    "subject_entity_id": 3,
+    "predicate": "deadline",
+    "value": "Friday",
+    "value_entity_id": null,
+    "canonical_text": "The deadline for Golden Goose is Friday.",
+    "scope": "{\"project\": \"golden goose\"}",
+    "status": "superseded",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T10:00:00",
+    "valid_until": "2026-09-01T10:20:00",
+    "source_evidence": [
+      {
+        "interaction_id": 4,
+        "excerpt": "the deadline for golden goose is friday"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "other",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T08:54:29.172567",
+    "source_interaction_ids": [
+      4
+    ]
+  },
+  {
+    "id": 3,
+    "memory_type": "preference",
+    "subject": "user",
+    "subject_entity_id": 2,
+    "predicate": "email_style",
+    "value": "short direct",
+    "value_entity_id": null,
+    "canonical_text": "I prefer short, direct emails to my manager.",
+    "scope": "{\"app\": \"gmail\", \"context\": \"work\", \"recipient\": \"manager\"}",
+    "status": "active",
+    "certainty": "confirmed",
+    "temporal_status": "current",
+    "valid_from": "2026-09-01T09:40:00",
+    "valid_until": null,
+    "source_evidence": [
+      {
+        "interaction_id": 3,
+        "excerpt": "i prefer short direct emails to my manager"
+      }
+    ],
+    "confidence": 0.95,
+    "sensitivity": "normal",
+    "source_style": "email",
+    "explicitness": "explicit",
+    "expires_at": null,
+    "updated_at": "2026-09-20T08:54:06.492322",
+    "source_interaction_ids": [
+      3
+    ]
+  }
+]

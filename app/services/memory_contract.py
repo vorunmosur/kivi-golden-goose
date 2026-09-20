@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from enum import Enum
+from datetime import datetime
+from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 
@@ -8,7 +10,6 @@ class MemoryType(str, Enum):
     fact = "fact"
     preference = "preference"
     relationship = "relationship"
-    project = "project"
     episode = "episode"
 
 
@@ -51,6 +52,23 @@ class ChangeKind(str, Enum):
     remove = "remove"
 
 
+class Scope(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    app: str | None = None
+    context: str | None = None
+    project: str | None = None
+    recipient: str | None = None
+
+
+class EntityMention(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    name: str
+    kind: Literal["person", "project", "organization", "tool", "other"] = "other"
+    qualifier: str = ""
+    aliases: list[str] = Field(default_factory=list)
+    evidence_text: str
+
+
 class MemoryCandidate(BaseModel):
     """LLM proposal, never a direct database write command.
 
@@ -62,11 +80,19 @@ class MemoryCandidate(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     memory_type: MemoryType
-    subject: str = Field(default="user", min_length=1, max_length=200)
+    subject: str = Field(min_length=1,max_length=200,description="Entity this assertion describes; never default ownership to user.")
     predicate: str = Field(min_length=1, max_length=200, description="Stable semantic key when one is meaningful")
     value: str = Field(min_length=1, max_length=4000)
     canonical_text: str = Field(min_length=1, max_length=4000)
-    scope: str = Field(default="global", min_length=1, max_length=160)
+    scope: Scope | str = "global"
+    evidence_text: str = ""
+    certainty: Literal["confirmed", "tentative"] = "confirmed"
+    temporal_status: Literal["current", "future", "historical"] = "current"
+    valid_from: datetime | None = None
+    valid_until: datetime | None = None
+    subject_qualifier: str = ""
+    value_qualifier: str = ""
+    entities: list[EntityMention] = Field(default_factory=list)
     confidence: float = Field(ge=0.0, le=1.0)
     explicitness: Explicitness
     temporal: TemporalKind = TemporalKind.unknown
@@ -84,9 +110,30 @@ class CandidateBatch(BaseModel):
     candidates: list[MemoryCandidate] = Field(default_factory=list, max_length=12)
 
 
+class Claim(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    text: str
+    memory_ids: list[int] = Field(default_factory=list)
+    interaction_ids: list[int] = Field(default_factory=list)
+
+
 class GroundedAnswer(BaseModel):
     model_config = ConfigDict(extra="forbid")
     answer: str = Field(min_length=1, max_length=4000)
     supported: bool
+    claims: list[Claim] = Field(default_factory=list)
     used_memory_ids: list[int] = Field(default_factory=list)
     used_interaction_ids: list[int] = Field(default_factory=list)
+
+
+class EvidenceVerdict(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    supported: bool
+    reason: str
+
+
+class ForgetVerdict(BaseModel):
+    model_config=ConfigDict(extra="forbid")
+    supported: bool
+    reason: str
+    alias_ids: list[int]=Field(default_factory=list)

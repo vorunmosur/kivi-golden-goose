@@ -29,9 +29,20 @@ SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False, futu
 
 
 def init_db() -> None:
-    from app import models  # noqa: F401
-
-    Base.metadata.create_all(bind=engine)
+    from pathlib import Path
+    from alembic.config import Config
+    from alembic import command
+    from sqlalchemy import inspect
+    root=Path(__file__).resolve().parents[1]
+    config=Config(str(root / "alembic.ini"))
+    config.set_main_option("script_location",str(root / "alembic"))
+    tables=inspect(engine).get_table_names()
+    if "interactions" in tables and "alembic_version" not in tables:
+        columns={c["name"] for c in inspect(engine).get_columns("interactions")}
+        boundary_columns={c["name"] for c in inspect(engine).get_columns("forget_boundaries")} if "forget_boundaries" in tables else set()
+        revision=("head" if {"subject_entity_id","value_entity_id"} <= boundary_columns else "0002_v2_foundation") if "processing_status" in columns else "0001_initial"
+        command.stamp(config,revision)
+    command.upgrade(config,"head")
 
 
 def get_db():

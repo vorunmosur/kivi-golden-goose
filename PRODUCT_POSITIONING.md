@@ -1,3 +1,7 @@
 # Product Positioning
 
-Kivi should evolve from a session-bound voice tool into a trusted personal agent that builds a selective, evolving understanding of the user across sessions. It should remember useful facts, preferences, projects and experiences to reduce repetition, anticipate needs and help complete work, while updating stale knowledge and clarifying uncertain inferences instead of treating them as facts. Kivi should remain a proactive subordinate: increasingly capable as the user grants it access, but always bounded by the user’s permissions. The user should remain in control of what Kivi can access, remember and act upon, making trust and transparency fundamental to its intelligence.
+Kivi is a personal AI assistant that builds a selective, evolving understanding of the user across sessions. It turns useful context from everyday interactions into durable memory—facts, preferences, relationships, projects and relevant experiences—so users do not repeatedly explain their world.
+
+Kivi does not remember everything. It updates stale knowledge, distinguishes uncertainty from fact, and uses memory only when relevant. Normal Dictation remains lightweight, while Hey Kivi benefits from learned context. Users retain control through inspectable provenance, corrections, forgetting and Hide Mode.
+
+The goal is simple: Kivi should remember the right things and become more useful over time.

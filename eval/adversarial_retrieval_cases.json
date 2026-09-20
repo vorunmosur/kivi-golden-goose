@@ -1,0 +1,218 @@
+[
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "multi_memory_draft",
+    "query": "Compose a note for Cedar Archive covering the equipment we use and the promised delivery date.",
+    "required": [
+      "TIFF",
+      "January",
+      "10"
+    ],
+    "forbidden": [
+      "QR codes",
+      "Harbor Garden"
+    ],
+    "context": {
+      "app": "email",
+      "context": "work",
+      "project": "Cedar Archive"
+    },
+    "sources": [
+      30,
+      170
+    ]
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "multi_memory_draft",
+    "query": "Give the Coral Survey team a short briefing: equipment plus delivery timing.",
+    "required": [
+      "sonar",
+      "January",
+      "16"
+    ],
+    "forbidden": [
+      "TIFF",
+      "Blender"
+    ],
+    "context": {
+      "app": "email",
+      "context": "work",
+      "project": "Coral Survey"
+    },
+    "sources": [
+      36,
+      176
+    ]
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "multi_memory_draft",
+    "query": "Summarize the equipment and due date for Birch Library in a message.",
+    "required": [
+      "Dublin Core",
+      "January",
+      "18"
+    ],
+    "forbidden": [
+      "sonar",
+      "TIFF"
+    ],
+    "context": {
+      "app": "email",
+      "context": "work",
+      "project": "Birch Library"
+    },
+    "sources": [
+      38,
+      178
+    ]
+  },
+  {
+    "after": 149,
+    "scenario": 0,
+    "kind": "historical",
+    "query": "Before Petra took charge of Harbor Garden, who held that coordination role?",
+    "required": [
+      "Nolan"
+    ],
+    "forbidden": [
+      "Cedar Archive"
+    ],
+    "context": {},
+    "sources": [
+      11,
+      91
+    ]
+  },
+  {
+    "after": 149,
+    "scenario": 0,
+    "kind": "historical",
+    "query": "Tell me the earlier coordinator of Juniper Festival, prior to Dario.",
+    "required": [
+      "Soren"
+    ],
+    "forbidden": [
+      "TIFF"
+    ],
+    "context": {},
+    "sources": [
+      12,
+      92
+    ]
+  },
+  {
+    "after": 99,
+    "scenario": 0,
+    "kind": "episode_paraphrase",
+    "query": "Recall the issue I looked into while working on Juniper Festival.",
+    "required": [
+      "duplicate barcode"
+    ],
+    "forbidden": [
+      "scanner glare"
+    ],
+    "context": {},
+    "sources": [
+      72
+    ]
+  },
+  {
+    "after": 29,
+    "scenario": 0,
+    "kind": "current_vs_tentative",
+    "query": "Who actually coordinates Cedar Archive at present, as opposed to the possible future candidate?",
+    "required": [
+      "Mira"
+    ],
+    "forbidden": [
+      "Omar"
+    ],
+    "context": {},
+    "sources": [
+      10
+    ]
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "unsupported",
+    "query": "What is the signed purchase order number for Coral Survey?",
+    "required": [],
+    "forbidden": [
+      "TIFF"
+    ],
+    "context": {},
+    "sources": []
+  },
+  {
+    "after": 169,
+    "scenario": 0,
+    "kind": "forget_leakage",
+    "query": "Remind me of the delivery deadline for Cedar Archive.",
+    "required": [],
+    "forbidden": [
+      "November",
+      "December"
+    ],
+    "context": {},
+    "sources": []
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "scoped_preference",
+    "query": "Write a project update for a client about Juniper Festival.",
+    "required": [],
+    "forbidden": [
+      "TIFF",
+      "Cedar Archive"
+    ],
+    "context": {
+      "app": "email",
+      "context": "work",
+      "project": "Juniper Festival",
+      "recipient": "client"
+    },
+    "sources": []
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "personal_scope",
+    "query": "Tell a friend how Coral Survey is going.",
+    "required": [],
+    "forbidden": [
+      "TIFF"
+    ],
+    "context": {
+      "app": "whatsapp",
+      "context": "personal",
+      "project": "Coral Survey",
+      "recipient": "friend"
+    },
+    "sources": []
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "comparison",
+    "query": "Compare the tools currently used on Cedar Archive and Coral Survey.",
+    "required": [
+      "TIFF",
+      "sonar"
+    ],
+    "forbidden": [
+      "Blender"
+    ],
+    "context": {},
+    "sources": [
+      30,
+      36
+    ]
+  }
+]

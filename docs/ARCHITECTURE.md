@@ -1,5 +1,29 @@
 # Architecture decision record
 
+## Current V2 implementation
+
+FastAPI, SQLAlchemy and SQLite retain immutable interactions, four memory kinds
+(fact, relationship, preference, episode), exact entity identities and aliases,
+source spans, audited lifecycle decisions and forget boundaries. Projects are
+entities. Qwen/Ollama interprets input; deterministic code reconciles certainty,
+validity, cardinality and scope. Model-tagged embeddings use an in-process cosine
+scan. Current facts exclude tentative/future/stale state; historical requests can
+use older semantic versions and safe episodes. Drafts receive applicable scoped
+preferences. A second Qwen call checks complete-answer support against original
+source excerpts after citation validation. It has correlated-error risk.
+
+Entity traversal also resolves a fact's unlinked object against exact, unique
+known entity names or explicitly evidenced aliases. This supports objects named
+before their entity record exists. Multiple identity matches are excluded rather
+than guessed. This was driven by a retained live organizer-query failure, not by
+a need for a graph database. Full behavioral rules: [V2_CONTRACT.md](V2_CONTRACT.md).
+Evaluation design: [LONGITUDINAL_PROTOCOL.md](LONGITUDINAL_PROTOCOL.md).
+
+## Earlier design rationale
+
+The following V1 rationale is historical; the V2 contract above governs current
+memory kinds, retrieval and evidence verification.
+
 ## Product slice
 Kivi learns selectively from the situations it already appears in—Developer, Email, Work Messaging, Personal Messaging and Other—and uses durable semantic understanding only when the user addresses Hey Kivi. The same sentence can therefore receive a different retention decision depending on context, sensitivity, explicitness, temporality and confidence.
 

@@ -1,0 +1,21 @@
+{
+  "run_kind": "full_corpus",
+  "corpus": "data/dev_corpus.jsonl",
+  "input_sha256": "e9fed3fa5a6d59e0da8fb3a989784e08c849558e5cecb7c77ad67e4014a6de7f",
+  "model": "qwen3.5:9b",
+  "embedding_model": "nomic-embed-text:latest",
+  "records": 500,
+  "available_records": 500,
+  "ingestion_failures": 0,
+  "state_check_passes": 0,
+  "state_check_cases": 0,
+  "query_passes": 0,
+  "query_cases": 3,
+  "missing_provenance": [],
+  "secret_memories": [],
+  "ingestion_p50_ms": 46297.07204999886,
+  "ingestion_p95_ms": 73050.57980000129,
+  "database_bytes": 5410344,
+  "local_model_cost_usd": 0,
+  "cost_excludes": "hardware and electricity"
+}

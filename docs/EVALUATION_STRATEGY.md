@@ -1,4 +1,6 @@
-# Evaluation strategy
+# Historical V1 evaluation strategy
+
+This document preserves the V1 strategy. Current V2 review uses [the longitudinal protocol](LONGITUDINAL_PROTOCOL.md) and the separately labelled results in `eval/`. V1 offline results are not model-backed V2 validation.
 
 The candidate evaluation should test the product contract, not only model quality.
 

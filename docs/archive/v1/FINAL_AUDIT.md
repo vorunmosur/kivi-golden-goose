@@ -1,3 +1,7 @@
+# V1 audit preserved for historical reference
+
+The following describes baseline 02868bc only. V2 validation is reported in eval/v2_report.md. V2 is not submission-ready until its live review path is verified.
+
 # Final submission audit
 
 Status: **SUBMISSION-READY** for the Golden Goose assignment requirements.

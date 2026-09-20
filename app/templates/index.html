@@ -1,24 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kivi — Semantic Memory</title>
+  <title>Kivi — Memory that helps</title>
   <link rel="stylesheet" href="/static/app.css" />
 </head>
+
 <body>
   <main class="shell">
     <header>
       <div>
-        <span class="eyebrow">GOLDEN GOOSE / SEMANTIC MEMORY</span>
-        <h1>Kivi learns the parts of your world that keep mattering.</h1>
-        <p>Replay real Kivi contexts, inspect what becomes memory, then open a fresh Hey Kivi session and see how that understanding changes behavior.</p>
+        <span class="eyebrow">KIVI / GOLDEN GOOSE</span>
+        <h1>Kivi remembers what matters.</h1>
+        <p>
+          Use Kivi normally. Useful context becomes memory over time,
+          then helps when you ask Hey Kivi.
+        </p>
       </div>
-      <button class="ghost" id="resetBtn">Reset state</button>
+
+      <div class="reset-actions">
+        <button class="ghost" id="resetBtn">Reset state</button>
+        <button class="ghost" id="cancelReset" hidden>Cancel</button>
+      </div>
     </header>
 
+    <div class="journey">
+      <span>1&nbsp; Dictate</span>
+      <span>→</span>
+      <span>2&nbsp; Ask Hey Kivi</span>
+      <span>→</span>
+      <span>3&nbsp; Inspect memory</span>
+      <span>→</span>
+      <span>4&nbsp; Correct or forget</span>
+    </div>
+
     <nav class="tabs">
-      <button class="tab active" data-tab="learn">Learn</button>
+      <button class="tab active" data-tab="learn">Dictation</button>
       <button class="tab" data-tab="ask">Hey Kivi</button>
       <button class="tab" data-tab="memory">Memory</button>
       <button class="tab" data-tab="trace">Why?</button>
@@ -27,34 +46,150 @@
     <section id="learn" class="panel active">
       <div class="grid two">
         <div class="card">
-          <h2>Replay an interaction</h2>
-          <label>Style / situation</label>
-          <select id="style"><option>developer</option><option>email</option><option selected>work messaging</option><option>personal messaging</option><option>other</option></select>
-          <label>App context</label><input id="app" value="Slack" />
-          <label>Raw ASR</label><textarea id="raw">rajeeves my manager</textarea>
-          <label>LLM-formatted output</label><textarea id="formatted">Rajeev is my manager.</textarea>
-          <label class="check"><input id="hide" type="checkbox" /> Hide Mode (session-only unless explicitly remembered)</label>
-          <button id="ingestBtn">Process interaction</button>
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">NORMAL KIVI USE</span>
+              <h2>Dictation</h2>
+              <p class="muted">
+                Simulate something you said while using another app.
+                Kivi decides whether it is worth remembering.
+              </p>
+            </div>
+            <button class="text-button" id="dictationExample">Try example</button>
+          </div>
+
+          <div class="field-row">
+            <div>
+              <label for="app">App</label>
+              <input id="app" value="Slack" />
+            </div>
+
+            <div>
+              <label for="style">Context</label>
+              <select id="style">
+                <option>developer</option>
+                <option>email</option>
+                <option selected>work messaging</option>
+                <option>personal messaging</option>
+                <option>other</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="raw">What you said</label>
+          <textarea id="raw" placeholder="Type a dictation…">rajeeves my manager</textarea>
+
+          <details class="advanced" open>
+            <summary>Kivi's transcription</summary>
+            <label for="formatted">Cleaned-up text</label>
+            <textarea id="formatted">Rajeev is my manager.</textarea>
+          </details>
+
+          <label class="check">
+            <input id="hide" type="checkbox" />
+            <span>
+              <strong>Hide mode</strong>
+              <small>Don't retain this interaction.</small>
+            </span>
+          </label>
+
+          <button id="ingestBtn">Process dictation</button>
+
+          <details class="advanced import-block">
+            <summary>Import existing history</summary>
+            <p class="muted small">
+              Replay a JSON, JSONL or CSV history through the same memory pipeline.
+            </p>
+            <input type="file" id="corpusFile" accept=".json,.jsonl,.csv" />
+            <button class="ghost" id="importBtn">Learn from history</button>
+          </details>
         </div>
-        <div class="card result"><h2>Memory decision</h2><pre id="learnResult">No interaction processed yet.</pre></div>
+
+        <div class="card result">
+          <span class="section-kicker">MEMORY LAYER</span>
+          <h2>What Kivi did</h2>
+          <div id="learnResult" class="empty-state">
+            <strong>Nothing processed yet.</strong>
+            <span>Process a dictation to see what Kivi chooses to remember.</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="ask" class="panel">
-      <div class="grid two">
-        <div class="card">
-          <h2>Fresh Hey Kivi session</h2>
-          <p class="muted">Semantic memory is applied here, not injected into ordinary dictation.</p>
-          <textarea id="query">Who is my manager?</textarea>
-          <button id="askBtn">Ask Hey Kivi</button>
+      <div class="assistant-card card">
+        <span class="section-kicker">EXPLICIT ASSISTANT</span>
+        <h2>Hey Kivi</h2>
+        <p class="muted">
+          Ask naturally. Kivi answers from what it can support in your learned history.
+        </p>
+
+        <div class="prompt-chips">
+          <button class="chip" data-query="Who is my manager?">Who is my manager?</button>
+          <button class="chip" data-query="What am I working on?">What am I working on?</button>
+          <button class="chip" data-query="How do I prefer work updates?">How do I prefer work updates?</button>
         </div>
-        <div class="card result"><h2>Answer + grounding</h2><pre id="askResult">Ask something grounded in the learned history.</pre></div>
+
+        <label for="query">Ask Kivi</label>
+        <textarea id="query" class="query-box">Who is my manager?</textarea>
+        <button id="askBtn">Ask Hey Kivi</button>
+
+        <div class="answer-area">
+          <div id="askResult" class="empty-state">
+            <strong>Ask something about your history.</strong>
+            <span>Kivi will answer only when it has grounded evidence.</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="memory" class="panel"><div class="card"><div class="row"><h2>What Kivi remembers</h2><button class="ghost" id="refreshMemory">Refresh</button></div><div id="memoryList" class="memory-list"></div></div></section>
-    <section id="trace" class="panel"><div class="grid two"><div class="card"><h2>Admission decisions</h2><div id="decisionList"></div></div><div class="card"><h2>Hey Kivi traces</h2><div id="traceList"></div></div></div></section>
+    <section id="memory" class="panel">
+      <div class="card">
+        <div class="row">
+          <div>
+            <span class="section-kicker">YOUR CONTROL</span>
+            <h2>What Kivi remembers</h2>
+            <p class="muted">
+              Current understanding, preferences, relationships and useful context.
+            </p>
+          </div>
+          <button class="ghost" id="refreshMemory">Refresh</button>
+        </div>
+
+        <div id="memoryList" class="memory-list"></div>
+      </div>
+    </section>
+
+    <section id="trace" class="panel">
+      <div class="why-intro">
+        <span class="section-kicker">INSPECTABILITY</span>
+        <h2>Why?</h2>
+        <p class="muted">
+          See why Kivi remembered something and what evidence supported an answer.
+        </p>
+      </div>
+
+      <div class="grid two">
+        <div class="card">
+          <h2>Memory decisions</h2>
+          <p class="muted small">
+            Why Kivi learned, updated, ignored or forgot information.
+          </p>
+          <div id="decisionList"></div>
+        </div>
+
+        <div class="card">
+          <h2>Answer traces</h2>
+          <p class="muted small">
+            What Kivi retrieved and why the answer was allowed.
+          </p>
+          <div id="traceList"></div>
+        </div>
+      </div>
+    </section>
   </main>
-<script src="/static/app.js"></script>
+
+  <script src="/static/app.js"></script>
 </body>
+
 </html>

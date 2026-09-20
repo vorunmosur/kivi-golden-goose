@@ -25,6 +25,11 @@ class Interaction(Base):
     metadata_json: Mapped[str] = mapped_column(Text, default="{}")
     hide_mode: Mapped[bool] = mapped_column(Boolean, default=False)
 
+    embedding_json: Mapped[str | None] = mapped_column(Text, nullable=True)
+    embedding_model: Mapped[str | None] = mapped_column(String(160), nullable=True)
+    retrieval_blocked: Mapped[bool] = mapped_column(Boolean, default=False)
+    processing_status: Mapped[str] = mapped_column(String(30), default="pending")
+
     sources: Mapped[list[MemorySource]] = relationship(back_populates="interaction", cascade="all, delete-orphan")
 
 
@@ -32,6 +37,11 @@ class Memory(Base):
     __tablename__ = "memories"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    certainty: Mapped[str] = mapped_column(String(30), default="confirmed")
+    temporal_status: Mapped[str] = mapped_column(String(30), default="current")
+    subject_entity_id: Mapped[int | None] = mapped_column(ForeignKey("entities.id"), nullable=True, index=True)
+    value_entity_id: Mapped[int | None] = mapped_column(ForeignKey("entities.id"), nullable=True, index=True)
+    embedding_model: Mapped[str | None] = mapped_column(String(160), nullable=True)
     memory_type: Mapped[str] = mapped_column(String(40))  # fact / preference / episode / relationship / project
     subject: Mapped[str] = mapped_column(String(200), default="user")
     predicate: Mapped[str] = mapped_column(String(200))
@@ -70,6 +80,9 @@ class MemoryDecision(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     interaction_id: Mapped[int] = mapped_column(ForeignKey("interactions.id", ondelete="CASCADE"))
+    previous_state_json: Mapped[str] = mapped_column(Text, default="[]")
+    new_state_json: Mapped[str] = mapped_column(Text, default="[]")
+    decision_maker: Mapped[str] = mapped_column(String(160), default="v2-deterministic")
     candidate_json: Mapped[str] = mapped_column(Text)
     action: Mapped[str] = mapped_column(String(30))  # create/update/ignore/clarify/temporary/reject
     reason: Mapped[str] = mapped_column(Text)
@@ -82,6 +95,7 @@ class QueryTrace(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     session_id: Mapped[str] = mapped_column(String(120), default="hey-kivi")
+    context_json: Mapped[str] = mapped_column(Text, default="{}")
     query: Mapped[str] = mapped_column(Text)
     response: Mapped[str] = mapped_column(Text)
     retrieved_memory_ids_json: Mapped[str] = mapped_column(Text, default="[]")
@@ -91,3 +105,34 @@ class QueryTrace(Base):
     end_to_end_latency_ms: Mapped[float] = mapped_column(Float, default=0.0)
     model_usage_json: Mapped[str] = mapped_column(Text, default="{}")
     created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
+
+
+class Entity(Base):
+    __tablename__ = "entities"
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    name: Mapped[str] = mapped_column(String(200))
+    normalized_name: Mapped[str] = mapped_column(String(200), index=True)
+    kind: Mapped[str] = mapped_column(String(40), default="other")
+    qualifier: Mapped[str] = mapped_column(String(200), default="")
+
+
+class EntityAlias(Base):
+    __tablename__ = "entity_aliases"
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    entity_id: Mapped[int] = mapped_column(ForeignKey("entities.id", ondelete="CASCADE"), index=True)
+    alias: Mapped[str] = mapped_column(String(200), index=True)
+    interaction_id: Mapped[int | None] = mapped_column(ForeignKey("interactions.id"), nullable=True)
+    evidence_text: Mapped[str] = mapped_column(Text, default="")
+
+
+class ForgetBoundary(Base):
+    __tablename__ = "forget_boundaries"
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    subject_entity_id: Mapped[int | None] = mapped_column(ForeignKey("entities.id", name="fk_boundary_subject_entity"), nullable=True, index=True)
+    value_entity_id: Mapped[int | None] = mapped_column(ForeignKey("entities.id", name="fk_boundary_value_entity"), nullable=True, index=True)
+    subject: Mapped[str] = mapped_column(String(200), index=True)
+    predicate: Mapped[str] = mapped_column(String(200), index=True)
+    scope: Mapped[str] = mapped_column(Text, default="global")
+    value: Mapped[str | None] = mapped_column(Text, nullable=True)
+    occurred_at: Mapped[datetime] = mapped_column(DateTime)
+    interaction_id: Mapped[int | None] = mapped_column(ForeignKey("interactions.id"), nullable=True)

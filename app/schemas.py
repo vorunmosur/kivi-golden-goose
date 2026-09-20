@@ -20,13 +20,13 @@ class InteractionIn(BaseModel):
 class QueryIn(BaseModel):
     query: str
     session_id: str = "hey-kivi"
+    current_context: dict[str,str] = Field(default_factory=dict)
 
 
 class MemoryPatch(BaseModel):
     value: str | None = None
     canonical_text: str | None = None
     scope: str | None = None
-    status: str | None = None
 
 
 class CorpusRecord(BaseModel):

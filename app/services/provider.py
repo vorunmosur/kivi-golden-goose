@@ -49,7 +49,7 @@ class OpenAICompatibleProvider:
     """
 
     def __init__(self) -> None:
-        self.enabled = bool(settings.api_key)
+        self.enabled = getattr(settings,"provider_kind","offline") == "ollama" or bool(settings.api_key)
 
     def _headers(self) -> dict[str, str]:
         return {"Authorization": f"Bearer {settings.api_key}", "Content-Type": "application/json"}
@@ -116,6 +116,27 @@ class OpenAICompatibleProvider:
             )
 
     def chat_json(self, system: str, user: str, schema: dict | None = None, schema_name: str = "response") -> tuple[dict, dict]:
+        if settings.provider_kind == "ollama":
+            native_schema=_strict_json_schema(schema) if schema else "json"
+            if schema_name=="memory_candidates" and schema:
+                native_schema=json.loads(json.dumps(schema))
+                candidate=native_schema["$defs"]["MemoryCandidate"]
+                candidate["properties"]["scope"]={"$ref":"#/$defs/Scope"}
+                native_schema["$defs"]["Scope"]["required"]=["app","context","project","recipient"]
+                candidate["required"]=list(dict.fromkeys(candidate.get("required",[])+["subject","scope","evidence_text","certainty","temporal_status","entities","cardinality","change_kind"]))
+            with httpx.Client(timeout=180) as client:
+                r = self._request_with_retry(client, f"{settings.ollama_url}/api/chat", {
+                    "model": settings.llm_model, "stream": False, "think": False,
+                    "format": native_schema, "options": {"temperature": 0, "num_ctx": 8192},
+                    "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
+                })
+                r.raise_for_status()
+                data = r.json()
+            return json.loads(data["message"]["content"]), {
+                "model": settings.llm_model, "prompt_tokens": data.get("prompt_eval_count", 0),
+                "completion_tokens": data.get("eval_count", 0), "duration_ns": data.get("total_duration"), "prompt_eval_duration_ns":data.get("prompt_eval_duration"), "generation_duration_ns":data.get("eval_duration"),
+                "cost_usd": 0, "cost_basis": "local inference; electricity/hardware excluded",
+            }
         self._require_enabled()
         payload = {
             "model": settings.llm_model,
@@ -156,6 +177,13 @@ class OpenAICompatibleProvider:
         return ModelResult(data["choices"][0]["message"]["content"], data.get("usage", {}))
 
     def embed(self, texts: list[str]) -> list[list[float]]:
+        if settings.provider_kind == "ollama":
+            with httpx.Client(timeout=180) as client:
+                r = self._request_with_retry(client, f"{settings.ollama_url}/api/embed", {
+                    "model": settings.embedding_model, "input": texts, "truncate": False,
+                })
+                r.raise_for_status()
+                return r.json()["embeddings"]
         self._require_enabled()
         payload = {"model": settings.embedding_model, "input": texts}
         with httpx.Client(timeout=90) as client:

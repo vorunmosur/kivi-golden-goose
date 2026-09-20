@@ -1,0 +1,176 @@
+[
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "targeted_draft",
+    "query": "Prepare a two-line note giving Saffron Studio equipment and delivery date.",
+    "required": [
+      "Blender",
+      "January",
+      "19"
+    ],
+    "forbidden": [
+      "today",
+      "flickering",
+      "attached",
+      "monitor"
+    ],
+    "context": {
+      "app": "email",
+      "context": "work",
+      "project": "Saffron Studio"
+    },
+    "sources": [
+      39,
+      179
+    ]
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "targeted_draft",
+    "query": "Send a factual summary of Saffron Studio: what tool we use and when delivery is scheduled.",
+    "required": [
+      "Blender",
+      "January",
+      "19"
+    ],
+    "forbidden": [
+      "this week",
+      "attached",
+      "root cause"
+    ],
+    "context": {
+      "app": "email",
+      "context": "work",
+      "project": "Saffron Studio"
+    },
+    "sources": [
+      39,
+      179
+    ]
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "targeted_draft",
+    "query": "Compose a short Cedar Archive equipment and deadline note.",
+    "required": [
+      "TIFF",
+      "January",
+      "10"
+    ],
+    "forbidden": [
+      "attached",
+      "attachment",
+      "we will",
+      "scanner glare"
+    ],
+    "context": {
+      "app": "email",
+      "context": "work",
+      "project": "Cedar Archive"
+    },
+    "sources": [
+      30,
+      170
+    ]
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "targeted_draft",
+    "query": "Write a concise message stating Cedar Archive format and due date.",
+    "required": [
+      "TIFF",
+      "January",
+      "10"
+    ],
+    "forbidden": [
+      "just completed",
+      "monitor",
+      "Harbor Garden"
+    ],
+    "context": {
+      "app": "email",
+      "context": "work",
+      "project": "Cedar Archive"
+    },
+    "sources": [
+      30,
+      170
+    ]
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "targeted_temporal",
+    "query": "What did I investigate on Cedar Archive, and on what date?",
+    "required": [
+      "scanner glare",
+      "July"
+    ],
+    "forbidden": [
+      "today",
+      "this week",
+      "recently"
+    ],
+    "context": {},
+    "sources": [
+      70
+    ]
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "targeted_temporal",
+    "query": "What did I investigate on Juniper Festival, and when was that recorded?",
+    "required": [
+      "duplicate barcode",
+      "July"
+    ],
+    "forbidden": [
+      "today",
+      "this week",
+      "recently"
+    ],
+    "context": {},
+    "sources": [
+      72
+    ]
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "targeted_identity",
+    "query": "Who are the museum and cycling club collaborators on Cedar Archive?",
+    "required": [
+      "Alex",
+      "museum",
+      "cycling"
+    ],
+    "forbidden": [],
+    "context": {},
+    "sources": [
+      180,
+      190
+    ]
+  },
+  {
+    "after": 499,
+    "scenario": 0,
+    "kind": "targeted_identity",
+    "query": "Name both collaborators on Coral Survey, distinguishing their contexts.",
+    "required": [
+      "Alex",
+      "museum",
+      "cycling"
+    ],
+    "forbidden": [],
+    "context": {},
+    "sources": [
+      186,
+      196
+    ]
+  }
+]

@@ -20,7 +20,7 @@ def db_session() -> Session:
         "sqlite://", connect_args={"check_same_thread": False}, poolclass=StaticPool
     )
     Base.metadata.create_all(engine)
-    return Session(engine)
+    return Session(engine, autoflush=False)
 
 
 def interaction(db: Session, text: str, when: datetime, style: str = "unknown", hide: bool = False) -> Interaction:
@@ -48,6 +48,7 @@ def candidate(value: str, predicate: str = "manager", cardinality: str = "single
 
 def run_with(db: Session, monkeypatch, row: Interaction, value: dict):
     monkeypatch.setattr(memory_engine, "extract_candidates", lambda _db, _row: ([value], {}, []))
+    value["evidence_text"]=row.formatted_text
     return memory_engine.process_interaction(db, row)
 
 
@@ -76,7 +77,7 @@ def test_out_of_order_evidence_cannot_replace_current_state(monkeypatch):
 
     active = db.scalars(select(Memory).where(Memory.status == "active")).all()
     assert [m.value for m in active] == ["Priya"]
-    assert result["actions"][0]["reason"] == "stale_out_of_order_evidence"
+    assert db.scalars(select(Memory).where(Memory.status=="historical")).one().value=="Rajeev"
 
 
 def test_multi_value_knowledge_coexists(monkeypatch):
@@ -184,10 +185,12 @@ def test_model_answer_requires_valid_evidence_citations(monkeypatch):
 
     monkeypatch.setattr(hey_kivi, "retrieve_memories", lambda *_args, **_kwargs: ([(memory, 0.9)], 1.0))
     monkeypatch.setattr(hey_kivi, "retrieve_history", lambda *_args, **_kwargs: [])
+    from app.services.query_context import QueryPlan
+    monkeypatch.setattr(hey_kivi, "plan_query", lambda *_args, **_kwargs: (QueryPlan(predicates=["manager"]),set(),{}))
     monkeypatch.setattr(hey_kivi.provider, "enabled", True)
     monkeypatch.setattr(hey_kivi.provider, "chat_json", lambda *_args, **_kwargs: ({
         "answer": "Priya is your manager.", "supported": True,
-        "used_memory_ids": [9999], "used_interaction_ids": [],
+        "claims": [{"text":"Priya is your manager.","evidence":["E9999"]}], "applied_preferences": [],
     }, {}))
 
     result = answer_query(db, "Who is my manager?", "test")
@@ -212,11 +215,14 @@ def test_model_answer_preserves_only_cited_provenance(monkeypatch):
 
     monkeypatch.setattr(hey_kivi, "retrieve_memories", lambda *_args, **_kwargs: ([(memory, 0.9)], 1.0))
     monkeypatch.setattr(hey_kivi, "retrieve_history", lambda *_args, **_kwargs: [])
+    from app.services.query_context import QueryPlan
+    monkeypatch.setattr(hey_kivi, "plan_query", lambda *_args, **_kwargs: (QueryPlan(predicates=["manager"]),set(),{}))
     monkeypatch.setattr(hey_kivi.provider, "enabled", True)
-    monkeypatch.setattr(hey_kivi.provider, "chat_json", lambda *_args, **_kwargs: ({
-        "answer": "Priya is your manager.", "supported": True,
-        "used_memory_ids": [memory.id], "used_interaction_ids": [],
-    }, {"prompt_tokens": 10, "completion_tokens": 5}))
+    def fake_chat(*args,**kwargs):
+        if args[-1]=="evidence_verdict": return {"supported":True,"reason":"Claim matches evidence."},{}
+        return {"answer":"Priya is your manager.","supported":True,"applied_preferences":[],
+            "claims":[{"text":"Priya is your manager.","evidence":["E1"]}]},{"prompt_tokens":10,"completion_tokens":5}
+    monkeypatch.setattr(hey_kivi.provider,"chat_json",fake_chat)
 
     result = answer_query(db, "Who is my manager?", "test")
     assert result["response"] == "Priya is your manager."

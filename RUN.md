@@ -1,206 +1,333 @@
-# Kivi Golden Goose — Runbook
+﻿# Run Kivi Golden Goose
 
-Primary review method: **local single-process web application + SQLite**.
+This is the shortest reviewer path for the final V2 implementation.
 
-## 1. Runtime
+## Requirements
 
-- **Python 3.12.x recommended and used for the Windows validation path.**
-- Python 3.11 is also expected to work.
-- Python 3.14 is not recommended for this pinned environment because some dependency versions may fall back to native compilation on Windows.
-- No Node, Docker, Postgres, or external database is required.
+- Windows, macOS or Linux
+- Python 3.12
+- Ollama
+- Qwen3.5 9B
+- nomic-embed-text
 
-## 2. Create the environment
+A GPU is strongly recommended for local model inference. CPU execution works but is substantially slower.
 
-### macOS / Linux
+No paid model API key is required.
 
-```bash
-python3.12 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-```
+---
 
-### Windows PowerShell
+## 1. Install
+
+### PowerShell
 
 ```powershell
-py -3.12 -m venv .venv
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
+
+ollama pull qwen3.5:9b
+ollama pull nomic-embed-text
 ```
 
-If PowerShell allows venv activation:
+Ensure Ollama is running. On systems without the background application:
 
 ```powershell
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+ollama serve
 ```
 
-If script activation is blocked by Windows execution policy, **do not change machine policy just for this repo**. Call the venv interpreter directly:
+In a new terminal:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install --upgrade pip
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+$env:KIVI_PROVIDER="ollama"
+$env:KIVI_OLLAMA_URL="http://localhost:11434"
+$env:KIVI_LLM_MODEL="qwen3.5:9b"
+$env:KIVI_EMBEDDING_MODEL="nomic-embed-text"
+$env:KIVI_DB_PATH="./kivi-v2.db"
 ```
 
-All commands below can likewise replace `python` with `.\.venv\Scripts\python.exe` on Windows.
+`.env.example` documents the same settings. Environment variables are read at process startup.
 
-## 3. Provider configuration
+---
 
-Kivi uses an **OpenAI-compatible provider interface**. The preferred generic environment variables are:
-
-- `KIVI_LLM_API_KEY`
-- `KIVI_LLM_MODEL`
-- `KIVI_EMBEDDING_MODEL`
-- `KIVI_LLM_BASE_URL`
-- `KIVI_DB_PATH` (default `./kivi.db`)
-- `KIVI_LLM_MAX_RETRIES` (default `3`)
-- `KIVI_LLM_RETRY_BASE_SECONDS` (default `0.6`)
-- `KIVI_INPUT_COST_PER_1M` / `KIVI_OUTPUT_COST_PER_1M` (optional evaluation cost calculation)
-
-`OPENAI_API_KEY` remains accepted as a backward-compatible fallback, but the memory architecture is not tied to OpenAI.
-
-### Example: OpenAI-compatible OpenAI endpoint
-
-```bash
-export KIVI_LLM_API_KEY="..."
-export KIVI_LLM_BASE_URL="https://api.openai.com/v1"
-export KIVI_LLM_MODEL="gpt-5-mini"
-export KIVI_EMBEDDING_MODEL="text-embedding-3-small"
-export KIVI_DEMO_MODE="false"
-```
-
-### Example: Google Gemini OpenAI-compatible endpoint
-
-Use model names available to the Google AI project at run time. The final manual live smoke path was successfully exercised with Gemini through Google's OpenAI-compatible endpoint.
+## 2. Initialize the database
 
 ```powershell
-$env:KIVI_LLM_API_KEY="..."
-$env:KIVI_LLM_BASE_URL="https://generativelanguage.googleapis.com/v1beta/openai"
-$env:KIVI_LLM_MODEL="gemini-3.8-flash"
-$env:KIVI_EMBEDDING_MODEL="gemini-embedding-001"
-$env:KIVI_DEMO_MODE="false"
+.\.venv\Scripts\python.exe -m alembic upgrade head
 ```
 
-Without a provider key, leave `KIVI_DEMO_MODE=true` to exercise the deliberately limited deterministic regression path.
+---
 
-If a provider returns HTTP `429`, the client retries with bounded backoff and then surfaces the quota error. This is expected when a free-tier project is exhausted; do not interpret it as a memory-engine failure.
+## 3. Start Kivi
 
-If `KIVI_LLM_BASE_URL` is blank or not an absolute `http(s)` URL, the provider now fails immediately with a clear configuration error before sending any request.
-
-## 4. Migrate and verify
-
-```bash
-python -m alembic upgrade head
-python -m pytest -q
-```
-
-Expected repository test count at submission lock: **19 passed**.
-
-## 5. Generate the development corpus
-
-```bash
-python scripts/generate_corpus.py
-```
-
-This writes `data/dev_corpus.jsonl` with ~500 transcript-like records including known Styles, missing/unknown Style, corrections, secrets, temporary information, preferences, facts, and irrelevant chatter.
-
-## 6. Run the reproducible offline regression
-
-Run without a provider key / with demo mode enabled:
-
-```bash
-python scripts/generate_corpus.py
-python eval/run_eval.py
-```
-
-Generated result: `eval/results.json`.
-
-The checked-in result is intentionally labeled **offline_regression**. It tests persistence, lifecycle rules, deterministic guardrails, provenance, retrieval plumbing, and grounded refusal behavior. It is **not** presented as a measurement of LLM semantic quality.
-
-## 7. Run the live semantic validation suite
-
-With a provider configured and `KIVI_DEMO_MODE=false`:
-
-```bash
-python eval/run_live_semantic_suite.py
-```
-
-This is a small, intentionally difficult live suite rather than a costly 500-call benchmark. It checks:
-
-- manager creation + correction,
-- scoped email preference,
-- a global fact mentioned in developer context,
-- weak inference handling,
-- credential rejection,
-- temporary/episodic information,
-- explicit forget/delete,
-- unsupported-question refusal,
-- synthesis across distributed evidence,
-- missing/unknown Style.
-
-It writes `eval/live_semantic_results.json`. If no API key is configured, it exits cleanly with a skip message instead of silently substituting offline fixtures.
-
-Transient upstream `429/500/502/503/504` responses and transport timeouts are retried with bounded exponential backoff. Permanent authentication/not-found errors are not retried.
-
-## 8. Run the full model-backed 500-record evaluator (optional but supported)
-
-With a provider configured:
-
-```bash
-python scripts/generate_corpus.py
-python eval/run_eval.py
-```
-
-The same evaluator then uses the real semantic extractor and grounded answerer. Per-case failures remain visible in `pipeline_errors`, `admission_evaluation.failures`, and the inspectable cases. For a free-tier provider, check rate limits before running all 500 records.
-
-## 9. Start the normal-user product
-
-```bash
-python -m uvicorn app.main:app --reload
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 
 Open:
 
 `http://127.0.0.1:8000`
 
-The product experience begins and ends in this interface; a terminal or database console is not required for normal use.
+The product surfaces are:
 
-Suggested demo:
+- **Learn**
+- **Hey Kivi**
+- **Memory**
+- **Why?**
 
-1. **Learn** → Work Messaging: `Rajeev is my manager.`
-2. **Learn** → Developer: `I'm working on Golden Goose.`
-3. **Learn** → Developer: `Use this API key: sk-...` and observe that it is rejected.
-4. Open a fresh **Hey Kivi** session and ask `Who is my manager?`
-5. Add `Correction: Priya is my manager now.` and ask again.
-6. Open **Memory** to inspect provenance and delete a memory.
-7. Open **Why?** to inspect admission/query traces without requiring a developer console.
+---
 
-## 10. Import another corpus / hidden evaluation data
+## 4. Five-minute reviewer walkthrough
 
-The UI/API accepts JSONL or JSON at `POST /api/import` as multipart file upload. Each record may include:
+### A. Learn current state
 
-`raw_asr`, `formatted_output`, `timestamp`, `app`, `style`, `session_id`, `metadata`.
+In Learn:
 
-`style` and `app` may be absent, null, empty, or unfamiliar. They are context hints; extraction does **not** depend on a known Style.
+> Rajeev is my manager.
 
-```bash
-curl -F "file=@data/dev_corpus.jsonl" http://127.0.0.1:8000/api/import
+Ask Hey Kivi:
+
+> Who is my current manager?
+
+Inspect the resulting memory and source evidence.
+
+### B. Introduce uncertainty
+
+Learn:
+
+> Priya might become my manager next month.
+
+Ask again:
+
+> Who is my current manager?
+
+The tentative future statement should not silently replace confirmed current state.
+
+### C. Confirm a change
+
+Learn:
+
+> Priya officially took over as my manager today.
+
+Ask again:
+
+> Who is my current manager?
+
+Inspect Memory / Why? to see the lifecycle transition rather than only the final sentence.
+
+### D. Test distributed knowledge
+
+Learn separate interactions such as:
+
+> Project Aurora is due Friday.
+
+> Aurora uses FastAPI for the backend.
+
+Then ask:
+
+> What do you know about Aurora's deadline and backend technology?
+
+The answer should combine independently supported facts while retaining their evidence.
+
+### E. Test correction
+
+Learn:
+
+> Correction: Aurora's deadline moved to Saturday.
+
+Ask the same question again.
+
+The current answer should use Saturday rather than the stale Friday state.
+
+### F. Test grounded drafting
+
+Learn:
+
+> Keep my work updates concise and use bullet points.
+
+Ask:
+
+> Draft a concise update saying Aurora is due Saturday and uses FastAPI.
+
+The presentation preference may affect formatting, but every factual proposition must still come from supplied evidence.
+
+### G. Test unsupported information
+
+Ask for personal information that was never supplied.
+
+Kivi should abstain rather than invent it.
+
+### H. Test forgetting
+
+Use Memory to forget a retained item and query it again.
+
+Old raw interaction history behind the forget boundary should not silently restore the forgotten fact.
+
+---
+
+## 5. Run the automated tests
+
+Run the primary suite:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q --ignore=tests/test_migrations.py --basetemp=.pytest_tmp
 ```
 
-## 11. Inspect memory and traces
+Final verified result:
 
-- Normal-user Memory surface: app → **Memory**
-- Explainability surface: app → **Why?**
-- APIs: `/api/memories`, `/api/decisions`, `/api/traces`
-- Offline evaluation: `eval/results.json`
-- Optional live suite result: `eval/live_semantic_results.json`
-- SQLite database: `kivi.db`
-
-## 12. Reset
-
-UI: **Reset state**
-
-or:
-
-```bash
-curl -X POST http://127.0.0.1:8000/api/reset
+```text
+162 passed
 ```
+
+Run migrations separately:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q tests/test_migrations.py --basetemp=.pytest_migrations
+```
+
+Final verified result:
+
+```text
+3 passed
+```
+
+Total final verification:
+
+```text
+165 passed, 0 failed
+```
+
+Dependency/API deprecation warnings may be printed during the suite.
+
+---
+
+## 6. Inspect the preserved final evaluation
+
+The final clean model-backed 500-record run is preserved at:
+
+```text
+eval/final-hardening-clean-500/
+```
+
+Its summary records:
+
+```text
+records:              500 / 500
+ingestion_failures:   0
+missing_provenance:   0
+retained_secrets:     0
+median_ingestion:     46.297 s
+p95_ingestion:        73.051 s
+local_provider_cost:  $0
+```
+
+Local provider cost excludes hardware and electricity.
+
+This is a pipeline-integrity run. It is **not** labeled as 500/500 semantic accuracy.
+
+The post-500 frozen-state semantic challenge is preserved separately. No re-ingestion was used for that challenge.
+
+---
+
+## 7. Optional: run the semantic challenge
+
+A reviewer does **not** need to rerun the full 500-record ingestion to inspect the implementation.
+
+The full local-model corpus run is expensive and can take hours depending on hardware.
+
+For development/evaluation scripts, use a fresh output directory rather than overwriting preserved evidence.
+
+The repository includes:
+
+```text
+eval/run_v2_eval.py
+eval/run_longitudinal.py
+eval/post500_semantic_challenge.py
+```
+
+The post-500 challenge expects an existing database state and therefore should not be treated as a fresh-install smoke test.
+
+---
+
+## 8. API / audit surfaces
+
+Useful endpoints include:
+
+```text
+/api/memories
+/api/decisions
+/api/traces
+/api/entities
+/api/interactions/{id}
+```
+
+The UI exposes the same core inspection model through Memory and Why?.
+
+Audit inspection may show evidence associated with forgotten state. Hey Kivi retrieval must not use evidence across the applicable forget boundary.
+
+---
+
+## 9. Generic history import
+
+Learn supports:
+
+- JSON arrays
+- JSON objects containing record arrays
+- JSONL
+- CSV
+
+Required field:
+
+```text
+raw_asr
+```
+
+Recommended fields:
+
+```text
+formatted_output
+timestamp
+app
+style
+session_id
+metadata
+```
+
+`formatted_text` and `llm_formatted_output` are also accepted where supported by the importer.
+
+Missing contextual fields use generic defaults. The memory system does not depend on a fixed name, profession, project or predicate whitelist.
+
+Imports are processed chronologically.
+
+Invalid rows and model failures remain inspectable rather than disappearing silently.
+
+---
+
+## 10. Reset
+
+Use the application's Reset state control, or:
+
+```text
+POST /api/reset
+```
+
+Evaluation should use a separate database from manual application testing.
+
+---
+
+## Known limits
+
+The final implementation is intentionally narrow:
+
+- one local user;
+- no authentication;
+- no connected-app sending;
+- local Qwen inference can be slow;
+- exact vector scanning is appropriate only at this scale;
+- tentative evidence is conservatively handled but confirmation-status explanations can be richer;
+- arbitrary deep graph traversal is not guaranteed;
+- verification reduces unsupported generation but cannot provide a formal proof of semantic correctness.
+
+For design invariants and implementation rationale, see:
+
+- `README.md`
+- `docs/V2_CONTRACT.md`
+- `docs/GROUNDED_REALIZATION.md`

@@ -1,0 +1,9 @@
+{
+  "run_kind": "post500_frozen_state_semantic_challenge",
+  "database": "C:\\Users\\vor1s\\Downloads\\kivi-final-release\\final-500-query-test.db",
+  "cases": 11,
+  "passed": 9,
+  "failed": 2,
+  "pass_rate": 0.8181818181818182,
+  "note": "Query-side validation against a copy of the frozen 500-record database. No re-ingestion performed."
+}
