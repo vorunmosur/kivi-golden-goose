@@ -1,13 +1,35 @@
 # Product Vision
 
-Kivi should evolve from a voice transcription tool into a trusted personal AI agent that understands the user’s world and helps them actually get work done. I see the long-term direction as something closer to Jarvis for the computer: Hey Kivi becomes the primary interface and dictation becomes a tool within it. Instead of constantly switching between typing, clicking and talking, the user should increasingly be able to express what they want through voice and let Kivi execute it. The goal is not to eliminate the keyboard for the sake of it, but to reduce dependence on it because Kivi understands enough context to get the job done.
+Kivi should evolve from a voice transcription tool into a trusted personal AI agent that understands enough of the user's world to reduce repeated explanation and help them get work done.
 
-Semantic memory is what can make this relationship improve over time. Kivi should remember useful facts, preferences, relationships, projects, routines, corrections, habits and relevant episodes so the user does not have to repeatedly explain their world. It should develop both a broader understanding of the user and scoped understanding of individual projects and contexts. The real value is not Kivi simply recalling these memories, but using them to reduce workload, anticipate needs and proactively help complete goals.
+In the long term, Hey Kivi can become the primary interface while Dictation becomes one of the ways Kivi observes and assists with everyday work. The goal is not to replace typing for its own sake, but to let users express intent naturally while Kivi carries useful context across sessions, applications and tasks.
 
-However, memory should be selective rather than a lifelog. An explicit “remember this” should be a strong instruction to retain something, while corrections are strong signals that existing understanding must change. Repeated patterns, work context and Kivi’s different app/Style contexts can provide evidence about what may be useful later, but repetition or weak inference should not silently become fact. When uncertain, Kivi should clarify with the user. Temporary information should be allowed to expire, while changed facts should supersede stale ones so that memory remains relevant rather than becoming an accumulation of outdated information.
+## An understanding that evolves
 
-I think it is important to separate what Kivi can access, remember and act upon. Connecting an application should not mean surrendering complete access to it. A user could allow broad Calendar access but only task-specific Gmail access, or prevent Kivi from accessing categories such as banking emails entirely. These permissions should remain customizable. If a user reduces access after Kivi has already retained information from that source, Kivi should surface the retained information and ask whether the user wants it removed. Sensitive information should receive stricter treatment and should never be retained simply because Kivi happened to encounter it.
+Semantic memory provides this continuity. Kivi should selectively learn useful facts, preferences, relationships, projects, routines, corrections and relevant experiences.
 
-Users should always be able to see what Kivi remembers about them, understand why it was retained, correct it and delete it. I would also introduce a Hide Mode, where Kivi can understand and use information within the current interaction without adding it to durable memory or history. If the user explicitly says “remember this,” they can intentionally override that boundary for that information; otherwise the context disappears after the session.
+Memory should not become an undifferentiated archive. Kivi needs to distinguish current, historical, tentative, temporary and superseded information. Changed facts should update current understanding without destroying useful history. Explicit corrections should carry strong authority, while inferred behavioral preferences should require repeated evidence before becoming durable understanding.
 
-Ultimately, I see Kivi as a proactive but subordinate personal assistant. It should learn how the user works, recognize useful routines, prepare work and anticipate needs, while authority always remains with the user. This should not mean asking permission for every trivial action and creating approval fatigue. Its autonomy should operate within permissions already granted, while uncertainty, sensitive situations and consequential actions bring the user back into the loop. As users trust Kivi with more access, it can become more capable, but users who grant less access should still have a useful, more limited experience. A Kivi that understands the user is valuable; a Kivi the user trusts enough to let it understand them is far more powerful.
+Over time, these memories form an evolving model of the user's world: who people are, how they relate to projects, what the user is working on and how the user prefers to work.
+
+## Memory should improve behavior
+
+Recall alone is not the product. Memory becomes valuable when Kivi uses the right context at the right time.
+
+A fresh Hey Kivi session should answer questions and prepare grounded responses without requiring information the user has already established elsewhere. When evidence is insufficient, ambiguous or stale, Kivi should clarify or abstain rather than manufacture certainty.
+
+Normal Dictation should remain lightweight. Kivi can quietly decide what is worth retaining, while Memory and Why? give users control and inspectability when needed.
+
+## Trust and control
+
+What Kivi can access, what it remembers and what it can act upon should remain separate.
+
+Connecting an application should not automatically grant unrestricted memory or action permissions. Sensitive information deserves stricter treatment, and secrets should not become durable memory simply because Kivi encountered them.
+
+Users should be able to inspect what Kivi remembers, understand why it was retained, correct it and forget it. Hide Mode should allow interactions to remain outside durable memory.
+
+## Long-term direction
+
+The goal is a proactive but subordinate personal agent that understands how the user works, recognizes useful context, prepares work and reduces repetitive effort while remaining bounded by the user's permissions.
+
+The strongest Kivi is not the system that remembers the most. It is the system that remembers the right things, updates its understanding when the world changes, uses that understanding when useful, and earns enough trust for the user to rely on it.

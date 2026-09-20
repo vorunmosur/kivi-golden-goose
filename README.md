@@ -10,7 +10,7 @@ The implementation runs locally with **Qwen3.5 9B + nomic-embed-text + SQLite**.
 
 > **Reviewer:** start with [RUN.md](RUN.md).
 > The fastest useful path is to run the application, teach Kivi a few evolving facts, query them through Hey Kivi, and inspect Memory / Why?.
-
+> **Dependency note:** `requirements-lock.txt` is the reproducible reviewer environment and is the file used by `RUN.md`. `requirements.txt` contains the smaller set of direct application dependencies.
 ---
 
 ## Product thesis
